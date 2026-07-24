@@ -52,13 +52,6 @@
 
 <br/>
 
-<!-- Futuristic Vector Education & Contact Card -->
-<p align="center">
-  <img src="./assets/education_contact_card.svg" alt="Lê Bá Chiến Education & Contact Card" width="100%" />
-</p>
-
-<br/>
-
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:040714,50:00f3ff,100:ff0055&height=120&section=footer&text=NEURAL%20CORE%20ONLINE%20//%20LETS%20CONNECT%20AND%20COLLABORATE&fontSize=18&fontColor=ffffff&fontAlignY=65" width="100%"/>
 </p>
