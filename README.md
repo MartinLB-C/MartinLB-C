@@ -6,9 +6,9 @@
 </p>
 
 <p align="center">
-  <!-- Dynamic Terminal Typing Banner -->
+  <!-- Local Animated Cyber Terminal Typing Banner -->
   <a href="https://github.com/MartinLB-C">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=3000&pause=1000&color=00F3FF&background=0A0C1600&center=true&vCenter=true&width=850&lines=%3E+INITIALIZING+NEURAL+CORE...;%3E+HI!+I'M+LÊ+BÁ+CHIẾN+(MARTINLB-C);%3E+AI+ENGINEER+%2F%2F+DEEP+LEARNING+%26+RAG+SPECIALIST;%3E+B.S.+IN+IT+--+GREENWICH+VIETNAM" alt="Sci-Fi AI Terminal Typing Text" />
+    <img src="./assets/typing_banner.svg" alt="Lê Bá Chiến Sci-Fi AI Terminal Typing Text" width="100%" />
   </a>
 </p>
 
@@ -24,7 +24,7 @@
 
 <br/>
 
-<!-- Futuristic Vector Profile Dossier Card (Replaces plain code block) -->
+<!-- Futuristic Vector Profile Dossier Card -->
 <p align="center">
   <img src="./assets/profile_card.svg" alt="Lê Bá Chiến Profile Dossier Card" width="100%" />
 </p>
@@ -73,7 +73,7 @@
 
 <br/>
 
-<!-- Futuristic Vector Soft Skills Card (Replaces plain code block) -->
+<!-- Futuristic Vector Soft Skills Card -->
 <p align="center">
   <img src="./assets/soft_skills_card.svg" alt="Lê Bá Chiến Soft Skills Card" width="100%" />
 </p>

@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 90" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="typeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040714"/>
+      <stop offset="50%" stop-color="#0c122c"/>
+      <stop offset="100%" stop-color="#060919"/>
+    </linearGradient>
+
+    <!-- Neon Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Line Gradient -->
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f3ff" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#00f3ff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#ff0055" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    @keyframes blinkCursor {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    @keyframes textSequence {
+      0%, 22% { opacity: 1; }
+      24%, 25% { opacity: 0; }
+      26%, 100% { opacity: 0; }
+    }
+
+    @keyframes line1Anim {
+      0%, 22% { opacity: 1; transform: translateY(0); }
+      25%, 100% { opacity: 0; transform: translateY(-5px); }
+    }
+    @keyframes line2Anim {
+      0%, 24% { opacity: 0; transform: translateY(5px); }
+      27%, 47% { opacity: 1; transform: translateY(0); }
+      50%, 100% { opacity: 0; transform: translateY(-5px); }
+    }
+    @keyframes line3Anim {
+      0%, 49% { opacity: 0; transform: translateY(5px); }
+      52%, 72% { opacity: 1; transform: translateY(0); }
+      75%, 100% { opacity: 0; transform: translateY(-5px); }
+    }
+    @keyframes line4Anim {
+      0%, 74% { opacity: 0; transform: translateY(5px); }
+      77%, 97% { opacity: 1; transform: translateY(0); }
+      100% { opacity: 0; transform: translateY(-5px); }
+    }
+
+    .terminal-box {
+      stroke-opacity: 0.5;
+    }
+
+    .type-text {
+      font-family: 'Fira Code', 'Courier New', Consolas, monospace;
+      font-weight: 700;
+      font-size: 20px;
+      fill: #00f3ff;
+      text-anchor: middle;
+    }
+
+    .cursor {
+      animation: blinkCursor 0.8s infinite;
+      fill: #ff0055;
+    }
+
+    .l1 { animation: line1Anim 12s infinite; }
+    .l2 { animation: line2Anim 12s infinite; }
+    .l3 { animation: line3Anim 12s infinite; }
+    .l4 { animation: line4Anim 12s infinite; }
+  </style>
+
+  <!-- Terminal Container Background -->
+  <rect width="850" height="90" fill="url(#typeBg)" rx="8" stroke="#00f3ff" stroke-width="1.2" class="terminal-box"/>
+
+  <!-- Top Accent Frame -->
+  <line x1="20" y1="2" x2="830" y2="2" stroke="url(#lineGrad)" stroke-width="2"/>
+
+  <!-- Sci-Fi Terminal Header Buttons -->
+  <circle cx="25" cy="18" r="4" fill="#ff0055"/>
+  <circle cx="40" cy="18" r="4" fill="#ffaa00"/>
+  <circle cx="55" cy="18" r="4" fill="#00ff66"/>
+  <text x="75" y="22" font-family="Courier New, monospace" font-size="11" fill="#00f3ff" opacity="0.6">&gt; NEURAL_TERMINAL_v4.2</text>
+
+  <!-- Animated Text Lines -->
+  <g transform="translate(425, 60)">
+    <!-- Line 1 -->
+    <g class="l1">
+      <text class="type-text" filter="url(#glow)">&gt; INITIALIZING NEURAL CORE...</text>
+    </g>
+
+    <!-- Line 2 -->
+    <g class="l2">
+      <text class="type-text" filter="url(#glow)">&gt; HI! I'M LÊ BÁ CHIẾN (MARTINLB-C)</text>
+    </g>
+
+    <!-- Line 3 -->
+    <g class="l3">
+      <text class="type-text" filter="url(#glow)">&gt; AI ENGINEER // DEEP LEARNING &amp; RAG SPECIALIST</text>
+    </g>
+
+    <!-- Line 4 -->
+    <g class="l4">
+      <text class="type-text" filter="url(#glow)">&gt; B.S. IN IT -- GREENWICH VIETNAM</text>
+    </g>
+  </g>
+</svg>
