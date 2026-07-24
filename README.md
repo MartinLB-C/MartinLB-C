@@ -31,44 +31,9 @@
 
 <br/>
 
-<h2 align="center">
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Brain/Brain.png" width="35" height="35" /> 
-  <span style="color:#00f3ff; font-size: 24px;">KỸ NĂNG CHUYÊN MÔN // TECHNICAL SKILLS</span>
-</h2>
-
+<!-- Futuristic Vector Technical Skills Card -->
 <p align="center">
-  <strong>🤖 AI Tạo sinh, NLP &amp; Kiến trúc RAG</strong><br/>
-  <img src="https://img.shields.io/badge/LLMs-Gemini_%2F_Ollama-00f3ff?style=for-the-badge&logo=openai&logoColor=black" />
-  <img src="https://img.shields.io/badge/RAG_Architecture-Hybrid_Search-00ff66?style=for-the-badge&logoColor=black" />
-  <img src="https://img.shields.io/badge/Vector_Search-FAISS-ff0055?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/Keyword_Search-BM25-339933?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/Technique-Reranking-F7931E?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/Prompt-Engineering-1572B6?style=for-the-badge&logoColor=white" />
-</p>
-
-<p align="center">
-  <strong>👁️ Thị giác Máy tính &amp; Học sâu (Deep Learning)</strong><br/>
-  <img src="https://img.shields.io/badge/CNN-ResNet_%2F_EfficientNet_%2F_MobileNet-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
-  <img src="https://img.shields.io/badge/Vision_Transformer-ViT_Tiny-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
-  <img src="https://img.shields.io/badge/Task-FER_(Emotion_Recognition)-990000?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/Augmentation-AugMix_%2F_RandAugment_%2F_TrivialAugment-00599C?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/Data_Labeling-3D_Point_Cloud_%2F_LiDAR-FCC624?style=for-the-badge&logoColor=black" />
-</p>
-
-<p align="center">
-  <strong>💻 Ngôn ngữ Lập trình &amp; Cơ sở Dữ liệu</strong><br/>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/C%23-.NET_Core-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQL_Server-CC292B?style=for-the-badge&logo=microsoftsqlserver&logoColor=white" />
-</p>
-
-<p align="center">
-  <strong>🛠️ Thư viện, Công cụ &amp; Đánh giá Mô hình</strong><br/>
-  <img src="https://img.shields.io/badge/Framework-PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
-  <img src="https://img.shields.io/badge/Library-Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
-  <img src="https://img.shields.io/badge/Library-Timm_%2F_Torchmetrics-339933?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/Tools-Git_%2F_GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/Evaluation-Faithfulness_%2F_Answer_Relevance_%2F_F1--score-00f3ff?style=for-the-badge&logoColor=black" />
+  <img src="./assets/skills_card.svg" alt="Lê Bá Chiến Technical Skills Card" width="100%" />
 </p>
 
 <br/>
@@ -81,8 +46,7 @@
 <br/>
 
 <h2 align="center">
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Graduation%20Cap.png" width="35" height="35" /> 
-  <span style="color:#00f3ff; font-size: 24px;">TRÌNH ĐỘ HỌC VẤN &amp; CHỨNG CHỈ</span>
+  <span style="color:#00f3ff; font-size: 24px;">🎓 TRÌNH ĐỘ HỌC VẤN &amp; CHỨNG CHỈ</span>
 </h2>
 
 <div align="center">
@@ -112,8 +76,7 @@
 <br/>
 
 <h2 align="center">
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Satellite.png" width="35" height="35" />
-  <span style="color:#00f3ff; font-size: 24px;">THÔNG TIN LIÊN HỆ // CONTACT ME</span>
+  <span style="color:#00f3ff; font-size: 24px;">📡 THÔNG TIN LIÊN HỆ // CONTACT ME</span>
 </h2>
 
 <p align="center">
