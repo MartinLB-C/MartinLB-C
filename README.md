@@ -8,7 +8,7 @@
 <p align="center">
   <!-- Dynamic Terminal Typing Banner -->
   <a href="https://github.com/MartinLB-C">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=00F3FF&background=0A0C1600&center=true&vCenter=true&width=800&lines=%3E+INITIALIZING+NEURAL+CORE...;%3E+HI!+I'M+LÊ+BÁ+CHIẾN+(MARTINLB-C);%3E+AI+ENGINEER+%2F%2F+DEEP+LEARNING+%26+RAG+SPECIALIST;%3E+B.S.+IN+IT+--+GREENWICH+VIETNAM" alt="Sci-Fi AI Terminal Typing Text" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=3000&pause=1000&color=00F3FF&background=0A0C1600&center=true&vCenter=true&width=850&lines=%3E+INITIALIZING+NEURAL+CORE...;%3E+HI!+I'M+LÊ+BÁ+CHIẾN+(MARTINLB-C);%3E+AI+ENGINEER+%2F%2F+DEEP+LEARNING+%26+RAG+SPECIALIST;%3E+B.S.+IN+IT+--+GREENWICH+VIETNAM" alt="Sci-Fi AI Terminal Typing Text" />
   </a>
 </p>
 
@@ -24,31 +24,16 @@
 
 <br/>
 
-```ascii
-┌─── [ SYSTEM DOSSIER // GIỚI THIỆU BẢN THÂN ] ─────────────────────────────┐
-│                                                                            │
-│  👤 HỌ VÀ TÊN     : Lê Bá Chiến (MartinLB-C)                              │
-│  🎓 HỌC VẤN       : Cử nhân CNTT - Đại học Greenwich Việt Nam (2021-2025) │
-│  📜 CHỨNG CHỈ     : Tiếng Anh VSTEP B2 (2024)                              │
-│  🚀 CHUYÊN MÔN    : AI Engineer / Deep Learning & RAG Specialist          │
-│  📞 LIÊN HỆ       : 0365667716 | bachien0987@gmail.com                     │
-│                                                                            │
-│  📝 GIỚI THIỆU BẢN THÂN & MỤC TIÊU NGHỀ NGHIỆP:                            │
-│  • Cử nhân CNTT sở hữu nền tảng vững chắc về Deep Learning và hơn 1 năm     │
-│    nghiên cứu chuyên sâu về bài toán FER (Facial Emotion Recognition).    │
-│  • Có kinh nghiệm thực tiễn trong xây dựng và tối ưu hóa hệ thống RAG     │
-│    (Hybrid Search, Reranking, Vector Search FAISS + BM25, LLMs).           │
-│  • Luôn chủ động giải quyết bài toán thực tế, tối ưu hóa hiệu suất mô hình │
-│    và định hướng vươn tới chương trình Thạc sĩ AI trong 2 năm tới.        │
-│                                                                            │
-└────────────────────────────────────────────────────────────────────────────┘
-```
+<!-- Futuristic Vector Profile Dossier Card (Replaces plain code block) -->
+<p align="center">
+  <img src="./assets/profile_card.svg" alt="Lê Bá Chiến Profile Dossier Card" width="100%" />
+</p>
 
----
+<br/>
 
 <h2 align="center">
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Brain/Brain.png" width="30" height="30" /> 
-  <span style="color:#00f3ff;">KỸ NĂNG CHUYÊN MÔN // TECHNICAL SKILLS</span>
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Brain/Brain.png" width="35" height="35" /> 
+  <span style="color:#00f3ff; font-size: 24px;">KỸ NĂNG CHUYÊN MÔN // TECHNICAL SKILLS</span>
 </h2>
 
 <p align="center">
@@ -86,43 +71,49 @@
   <img src="https://img.shields.io/badge/Evaluation-Faithfulness_%2F_Answer_Relevance_%2F_F1--score-00f3ff?style=for-the-badge&logoColor=black" />
 </p>
 
----
+<br/>
+
+<!-- Futuristic Vector Soft Skills Card (Replaces plain code block) -->
+<p align="center">
+  <img src="./assets/soft_skills_card.svg" alt="Lê Bá Chiến Soft Skills Card" width="100%" />
+</p>
+
+<br/>
 
 <h2 align="center">
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People/Man%20Technologist.png" width="30" height="30" /> 
-  <span style="color:#00f3ff;">KỸ NĂNG MỀM &amp; PHƯƠNG PHÁP LÀM VIỆC</span>
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Graduation%20Cap.png" width="35" height="35" /> 
+  <span style="color:#00f3ff; font-size: 24px;">TRÌNH ĐỘ HỌC VẤN &amp; CHỨNG CHỈ</span>
 </h2>
 
-```ascii
-┌─── [ SOFT SKILLS & METHODOLOGIES ] ────────────────────────────────────────┐
-│                                                                            │
-│  🔄 AGILE SCRUM       : Phối hợp làm việc nhóm hiệu quả, vai trò Scrum     │
-│                         Master tổ chức Sprint Planning & Review.          │
-│  💬 GIAO TIẾP & BÁO CÁO: Soạn thảo báo cáo nghiên cứu, phân tích dữ liệu   │
-│                         và trình bày kết quả chuẩn khoa học, mạch lạc.     │
-│  🎯 ĐỊNH HƯỚNG TƯ DUY  : Quản lý thời gian, tư duy phản biện và chủ động     │
-│                         giải quyết vấn đề kỹ thuật phức tạp.              │
-│                                                                            │
-└────────────────────────────────────────────────────────────────────────────┘
-```
+<div align="center">
+  <table width="90%">
+    <thead>
+      <tr stroke="#00f3ff">
+        <th align="left">🎓 Bằng cấp / Chứng chỉ</th>
+        <th align="left">🏛️ Trường / Tổ chức cấp</th>
+        <th align="center">⏳ Thời gian / Xếp loại</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b>Cử nhân Công nghệ Thông tin</b></td>
+        <td>Đại học Greenwich (Việt Nam)</td>
+        <td align="center"><b>2021 - 2025</b> | Xếp loại Khá - Giỏi</td>
+      </tr>
+      <tr>
+        <td><b>Chứng chỉ Tiếng Anh VSTEP B2</b></td>
+        <td>Bộ Giáo dục &amp; Đào tạo</td>
+        <td align="center"><b>Năm 2024</b></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
----
+<br/>
 
 <h2 align="center">
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Graduation%20Cap.png" width="30" height="30" /> 
-  <span style="color:#00f3ff;">TRÌNH ĐỘ HỌC VẤN &amp; CHỨNG CHỈ</span>
-</h2>
-
-| Bằng cấp / Chứng chỉ | Trường / Tổ chức cấp | Thời gian / Xếp loại |
-| :--- | :--- | :--- |
-| **Cử nhân Công nghệ Thông tin** | Đại học Greenwich (Việt Nam) | 2021 - 2025 \| Xếp loại: Khá - Giỏi |
-| **Chứng chỉ Tiếng Anh VSTEP B2** | Bộ Giáo dục & Đào tạo | Năm 2024 |
-
----
-
-<h2 align="center">
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Satellite.png" width="30" height="30" />
-  <span style="color:#00f3ff;">THÔNG TIN LIÊN HỆ // CONTACT ME</span>
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Satellite.png" width="35" height="35" />
+  <span style="color:#00f3ff; font-size: 24px;">THÔNG TIN LIÊN HỆ // CONTACT ME</span>
 </h2>
 
 <p align="center">

@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 380" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040714"/>
+      <stop offset="50%" stop-color="#0c122c"/>
+      <stop offset="100%" stop-color="#060919"/>
+    </linearGradient>
+
+    <!-- Neon Cyan Glow -->
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Neon Pink Glow -->
+    <filter id="glowPink" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Cyber Grid Pattern -->
+    <pattern id="cardGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#00f3ff" stroke-width="0.5" stroke-opacity="0.07"/>
+    </pattern>
+
+    <!-- Line Gradient -->
+    <linearGradient id="dividerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f3ff" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#00f3ff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#ff0055" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    @keyframes pulseBorder {
+      0%, 100% { stroke-opacity: 0.5; }
+      50% { stroke-opacity: 1; }
+    }
+    .card-frame {
+      animation: pulseBorder 4s ease-in-out infinite;
+    }
+    .text-title {
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      fill: #ffffff;
+    }
+    .text-label {
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      fill: #00f3ff;
+    }
+    .text-val {
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      font-weight: 600;
+      fill: #e2e8f0;
+    }
+    .text-bio {
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      font-size: 13.5px;
+      fill: #cbd5e1;
+    }
+  </style>
+
+  <!-- Card Background -->
+  <rect width="850" height="380" fill="url(#cardBg)" rx="10" stroke="#00f3ff" stroke-width="1.5" stroke-opacity="0.4" class="card-frame"/>
+  <rect width="850" height="380" fill="url(#cardGrid)" rx="10"/>
+
+  <!-- Cyber Corners Accent -->
+  <path d="M 12 35 L 12 12 L 35 12" stroke="#00f3ff" stroke-width="3" fill="none" filter="url(#glowCyan)"/>
+  <path d="M 838 35 L 838 12 L 815 12" stroke="#ff0055" stroke-width="3" fill="none" filter="url(#glowPink)"/>
+  <path d="M 12 345 L 12 368 L 35 368" stroke="#ff0055" stroke-width="3" fill="none" filter="url(#glowPink)"/>
+  <path d="M 838 345 L 838 368 L 815 368" stroke="#00f3ff" stroke-width="3" fill="none" filter="url(#glowCyan)"/>
+
+  <!-- Card Header -->
+  <g transform="translate(30, 45)">
+    <rect x="0" y="-22" width="6" height="28" fill="#00f3ff" filter="url(#glowCyan)"/>
+    <text x="18" y="0" class="text-title" font-size="20" letter-spacing="2" fill="#ffffff" filter="url(#glowCyan)">
+      GIỚI THIỆU BẢN THÂN &amp; MỤC TIÊU NGHỀ NGHIỆP
+    </text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="30" y1="62" x2="820" y2="62" stroke="url(#dividerGrad)" stroke-width="2"/>
+
+  <!-- Info Grid Left & Right -->
+  <g transform="translate(35, 95)">
+    <!-- Column 1 -->
+    <g transform="translate(0, 0)">
+      <text x="0" y="0" class="text-label" font-size="14">👤 HỌ VÀ TÊN:</text>
+      <text x="125" y="0" class="text-val" font-size="15" fill="#ffffff">Lê Bá Chiến (MartinLB-C)</text>
+    </g>
+
+    <g transform="translate(0, 32)">
+      <text x="0" y="0" class="text-label" font-size="14">🎓 HỌC VẤN:</text>
+      <text x="125" y="0" class="text-val" font-size="14">Cử nhân CNTT - ĐH Greenwich Việt Nam (2021-2025)</text>
+    </g>
+
+    <g transform="translate(0, 64)">
+      <text x="0" y="0" class="text-label" font-size="14">🚀 CHUYÊN MÔN:</text>
+      <text x="125" y="0" class="text-val" font-size="14" fill="#00f3ff">AI Engineer // Deep Learning &amp; RAG Specialist</text>
+    </g>
+
+    <!-- Column 2 (Right side) -->
+    <g transform="translate(480, 0)">
+      <text x="0" y="0" class="text-label" font-size="14">📜 CHỨNG CHỈ:</text>
+      <text x="110" y="0" class="text-val" font-size="14" fill="#ff0055">VSTEP B2 (2024)</text>
+    </g>
+
+    <g transform="translate(480, 32)">
+      <text x="0" y="0" class="text-label" font-size="14">📞 LIÊN HỆ:</text>
+      <text x="110" y="0" class="text-val" font-size="14">0365667716</text>
+    </g>
+
+    <g transform="translate(480, 64)">
+      <text x="0" y="0" class="text-label" font-size="14">✉️ EMAIL:</text>
+      <text x="110" y="0" class="text-val" font-size="14">bachien0987@gmail.com</text>
+    </g>
+  </g>
+
+  <!-- Sub Divider -->
+  <line x1="30" y1="185" x2="820" y2="185" stroke="#00f3ff" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="6,4"/>
+
+  <!-- Detailed Bio Section -->
+  <g transform="translate(35, 215)">
+    <text x="0" y="0" class="text-label" font-size="14" fill="#ff0055" filter="url(#glowPink)">&gt; TÓM TẮT CHUYÊN MÔN &amp; ĐỊNH HƯỚNG NGHỀ NGHIỆP:</text>
+
+    <!-- Bullet 1 -->
+    <circle cx="10" cy="28" r="3.5" fill="#00f3ff" filter="url(#glowCyan)"/>
+    <text x="24" y="32" class="text-bio">
+      Cử nhân CNTT sở hữu nền tảng vững chắc về <tspan fill="#00f3ff" font-weight="bold">Deep Learning</tspan> và hơn <tspan fill="#ffffff" font-weight="bold">1 năm nghiên cứu chuyên sâu</tspan>
+    </text>
+    <text x="24" y="52" class="text-bio">
+      về bài toán <tspan fill="#ff0055" font-weight="bold">FER (Facial Emotion Recognition)</tspan> với PyTorch, CNNs &amp; Vision Transformers (ViT).
+    </text>
+
+    <!-- Bullet 2 -->
+    <circle cx="10" cy="80" r="3.5" fill="#00f3ff" filter="url(#glowCyan)"/>
+    <text x="24" y="84" class="text-bio">
+      Có kinh nghiệm thực tiễn xây dựng &amp; tối ưu hóa hệ thống <tspan fill="#00f3ff" font-weight="bold">RAG Architecture</tspan> (Hybrid Search, Reranking,
+    </text>
+    <text x="24" y="104" class="text-bio">
+      Vector Search FAISS + BM25, LLMs Gemini / Ollama, Prompt Engineering &amp; Question Rewriting).
+    </text>
+
+    <!-- Bullet 3 -->
+    <circle cx="10" cy="132" r="3.5" fill="#00f3ff" filter="url(#glowCyan)"/>
+    <text x="24" y="136" class="text-bio">
+      Chủ động giải quyết bài toán thực tế, tối ưu hóa hiệu suất mô hình và luôn <tspan fill="#00ff66" font-weight="bold">sẵn sàng đóng góp cho các dự án AI thực tế</tspan>.
+    </text>
+  </g>
+</svg>
