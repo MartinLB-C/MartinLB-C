@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 340" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 340" width="100%" height="100%">
   <defs>
     <!-- Background Gradient -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -28,8 +28,8 @@
 
     <!-- Cyber Grid Pattern -->
     <pattern id="cyberGrid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00f3ff" stroke-width="0.5" stroke-opacity="0.08"/>
-      <circle cx="40" cy="40" r="1" fill="#00f3ff" fill-opacity="0.2"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00f3ff" stroke-width="0.5" stroke-opacity="0.12"/>
+      <circle cx="40" cy="40" r="1" fill="#00f3ff" fill-opacity="0.3"/>
     </pattern>
 
     <!-- Linear Scan Line Gradient -->
@@ -137,11 +137,14 @@
   <!-- Base Dark Background -->
   <rect width="1000" height="340" fill="url(#bgGrad)" rx="12"/>
 
-  <!-- Cyber Grid -->
+  <!-- High-Res Futuristic Sci-Fi Grid Background Image Layer -->
+  <image href="./cyber_bg.jpg" x="0" y="0" width="1000" height="340" preserveAspectRatio="xMidYMid slice" opacity="0.65"/>
+
+  <!-- Cyber Grid Overlay -->
   <rect width="1000" height="340" fill="url(#cyberGrid)" rx="12"/>
 
   <!-- Outer Sci-Fi Border Frame -->
-  <g stroke="#00f3ff" stroke-width="1.5" fill="none" opacity="0.6">
+  <g stroke="#00f3ff" stroke-width="1.5" fill="none" opacity="0.8">
     <!-- Top-Left Corner -->
     <path d="M 20 50 L 20 20 L 50 20" />
     <path d="M 20 30 L 35 30" stroke="#ff0055" stroke-width="2"/>
@@ -166,22 +169,22 @@
   <g class="main-container">
     
     <!-- Central HUD Concentric Rings (Rotating) -->
-    <g class="hud-rotate-cw" opacity="0.35">
+    <g class="hud-rotate-cw" opacity="0.45">
       <circle cx="500" cy="170" r="120" stroke="#00f3ff" stroke-width="1.5" stroke-dasharray="40, 15, 10, 15" fill="none"/>
       <circle cx="500" cy="170" r="140" stroke="#00f3ff" stroke-width="1" stroke-dasharray="100, 20, 5, 20" fill="none"/>
     </g>
 
-    <g class="hud-rotate-ccw" opacity="0.4">
+    <g class="hud-rotate-ccw" opacity="0.5">
       <circle cx="500" cy="170" r="95" stroke="#ff0055" stroke-width="1.5" stroke-dasharray="20, 10, 60, 10" fill="none"/>
       <circle cx="500" cy="170" r="75" stroke="#00f3ff" stroke-width="1" stroke-dasharray="5, 5" fill="none"/>
     </g>
 
     <!-- Central Glowing Core Reticle -->
-    <circle cx="500" cy="170" r="50" fill="#00f3ff" fill-opacity="0.05" stroke="#00f3ff" stroke-width="1" class="pulse-element"/>
+    <circle cx="500" cy="170" r="50" fill="#00f3ff" fill-opacity="0.08" stroke="#00f3ff" stroke-width="1" class="pulse-element"/>
     <circle cx="500" cy="170" r="6" fill="#00f3ff" filter="url(#glowCyan)"/>
 
     <!-- Glowing Circuit Lines Moving Across HUD -->
-    <g stroke="#00f3ff" stroke-width="1.5" fill="none" opacity="0.7">
+    <g stroke="#00f3ff" stroke-width="1.5" fill="none" opacity="0.8">
       <path class="circuit-path" d="M 80 170 L 250 170 L 310 110 L 410 110" filter="url(#glowCyan)"/>
       <circle cx="410" cy="110" r="3" fill="#00f3ff"/>
       
@@ -190,7 +193,7 @@
     </g>
 
     <!-- Side Data Equalizer Waves (Left Side) -->
-    <g fill="#00f3ff" opacity="0.7">
+    <g fill="#00f3ff" opacity="0.8">
       <rect x="70" y="165" width="4" height="10" class="eq-bar-1" rx="1"/>
       <rect x="78" y="165" width="4" height="10" class="eq-bar-2" rx="1"/>
       <rect x="86" y="165" width="4" height="10" class="eq-bar-3" rx="1"/>
@@ -199,7 +202,7 @@
     </g>
 
     <!-- Side Data Equalizer Waves (Right Side) -->
-    <g fill="#ff0055" opacity="0.7">
+    <g fill="#ff0055" opacity="0.8">
       <rect x="894" y="165" width="4" height="10" class="eq-bar-5" rx="1"/>
       <rect x="902" y="165" width="4" height="10" class="eq-bar-4" rx="1"/>
       <rect x="910" y="165" width="4" height="10" class="eq-bar-3" rx="1"/>
@@ -210,17 +213,17 @@
     <!-- Header Sci-Fi Text Overlay -->
     <g class="tech-font" text-anchor="middle">
       <!-- Top Tag -->
-      <text x="500" y="55" fill="#00f3ff" font-size="12" letter-spacing="4" opacity="0.8">
+      <text x="500" y="55" fill="#00f3ff" font-size="12" letter-spacing="4" opacity="0.9">
         [ SYSTEM DOSSIER // AI ENGINEER &amp; RAG SPECIALIST ]
       </text>
 
       <!-- Main Glowing Title -->
-      <text x="500" y="115" fill="#ffffff" font-size="34" font-weight="900" letter-spacing="6" filter="url(#glowCyan)">
+      <text x="500" y="115" fill="#ffffff" font-size="36" font-weight="900" letter-spacing="7" filter="url(#glowCyan)">
         LÊ BÁ CHIẾN
       </text>
       
       <!-- Subtitle -->
-      <text x="500" y="145" fill="#00f3ff" font-size="14" letter-spacing="3" opacity="0.9">
+      <text x="500" y="145" fill="#00f3ff" font-size="14" letter-spacing="3" opacity="0.95">
         AI ENGINEER // DEEP LEARNING &amp; RAG ARCHITECT
       </text>
 
@@ -229,7 +232,7 @@
 
       <!-- Blinking Status Text -->
       <g class="blinking-status">
-        <rect x="340" y="242" width="320" height="26" fill="#00f3ff" fill-opacity="0.1" stroke="#00f3ff" stroke-width="1" rx="4"/>
+        <rect x="340" y="242" width="320" height="26" fill="#00f3ff" fill-opacity="0.15" stroke="#00f3ff" stroke-width="1.2" rx="4"/>
         <text x="500" y="260" fill="#00f3ff" font-size="12" letter-spacing="2">
           &gt; SYSTEM LOADED // OPEN FOR AI ROLES &lt;
         </text>
@@ -237,14 +240,14 @@
     </g>
 
     <!-- Bottom Left System Metrics -->
-    <g class="tech-font" font-size="10" fill="#00f3ff" opacity="0.65">
+    <g class="tech-font" font-size="10" fill="#00f3ff" opacity="0.8">
       <text x="40" y="275">&gt; EDU: GREENWICH VIETNAM</text>
       <text x="40" y="292">&gt; FOCUS: DEEP LEARNING &amp; RAG</text>
       <text x="40" y="309">&gt; LANG: ENGLISH VSTEP B2</text>
     </g>
 
     <!-- Bottom Right Cyber Coordinates -->
-    <g class="tech-font" font-size="10" fill="#ff0055" opacity="0.65" text-anchor="end">
+    <g class="tech-font" font-size="10" fill="#ff0055" opacity="0.8" text-anchor="end">
       <text x="960" y="275">SPECIALIZATION: FER &amp; LLM &lt;</text>
       <text x="960" y="292">GOAL: ADVANCED AI SYSTEMS &lt;</text>
       <text x="960" y="309">STATUS: ACTIVE ENGINEER &lt;</text>

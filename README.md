@@ -1,5 +1,5 @@
 <p align="center">
-  <!-- Futuristic Cyber HUD Hologram Reveal Header -->
+  <!-- Futuristic Cyber HUD Hologram Reveal Header with Integrated Sci-Fi Background -->
   <a href="https://github.com/MartinLB-C">
     <img src="./assets/cyber_hud.svg" alt="Lê Bá Chiến AI Cyber HUD Banner" width="100%" />
   </a>
@@ -21,13 +21,6 @@
   <img src="https://img.shields.io/badge/STATUS-OPEN_FOR_AI_ROLES-ffaa00?style=for-the-badge&logoColor=000&labelColor=050816" />
 
 </div>
-
-<br/>
-
-<!-- Futuristic Cyber AI Grid Display Panel Avatar -->
-<p align="center">
-  <img src="./assets/cyber_avatar.jpg" alt="Lê Bá Chiến Futuristic AI Cyber Grid Avatar" width="400" />
-</p>
 
 <br/>
 
