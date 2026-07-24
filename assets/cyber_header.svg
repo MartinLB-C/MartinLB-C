@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 240" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="headerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040714"/>
+      <stop offset="50%" stop-color="#0b122e"/>
+      <stop offset="100%" stop-color="#050816"/>
+    </linearGradient>
+
+    <!-- Neon Glow Filters -->
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="glowPink" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Cyber Grid Pattern -->
+    <pattern id="headerGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#00f3ff" stroke-width="0.5" stroke-opacity="0.1"/>
+      <circle cx="30" cy="30" r="1" fill="#00f3ff" fill-opacity="0.2"/>
+    </pattern>
+
+    <!-- Line Gradient -->
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f3ff" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#00f3ff" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#ff0055" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#00f3ff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 0.9; }
+    }
+    @keyframes rotateClockwise {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes blinkStatus {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    .bg-frame { stroke-opacity: 0.6; }
+    .title-text {
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 900;
+      fill: #ffffff;
+      letter-spacing: 6px;
+    }
+    .sub-text {
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      font-size: 14px;
+      fill: #00f3ff;
+      letter-spacing: 3px;
+    }
+    .status-text {
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      font-size: 11px;
+      fill: #00f3ff;
+    }
+    .hud-rotate {
+      animation: rotateClockwise 30s linear infinite;
+      transform-origin: 500px 120px;
+    }
+    .blinking {
+      animation: blinkStatus 1.5s infinite;
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1000" height="240" fill="url(#headerBg)" rx="10" stroke="#00f3ff" stroke-width="1.5" class="bg-frame"/>
+  <rect width="1000" height="240" fill="url(#headerGrid)" rx="10"/>
+
+  <!-- Cyber Corners Accent -->
+  <path d="M 15 35 L 15 15 L 35 15" stroke="#00f3ff" stroke-width="3" fill="none" filter="url(#glowCyan)"/>
+  <path d="M 985 35 L 985 15 L 965 15" stroke="#ff0055" stroke-width="3" fill="none" filter="url(#glowPink)"/>
+  <path d="M 15 205 L 15 225 L 35 225" stroke="#ff0055" stroke-width="3" fill="none" filter="url(#glowPink)"/>
+  <path d="M 985 205 L 985 225 L 965 225" stroke="#00f3ff" stroke-width="3" fill="none" filter="url(#glowCyan)"/>
+
+  <!-- Rotating Concentric HUD Circles in Background -->
+  <g class="hud-rotate" opacity="0.25">
+    <circle cx="500" cy="120" r="85" stroke="#00f3ff" stroke-width="1" stroke-dasharray="30, 10" fill="none"/>
+    <circle cx="500" cy="120" r="105" stroke="#ff0055" stroke-width="1" stroke-dasharray="60, 15" fill="none"/>
+  </g>
+
+  <!-- Header Content -->
+  <g text-anchor="middle">
+    <!-- Top System Protocol Tag -->
+    <text x="500" y="42" class="status-text" opacity="0.8">
+      [ SYSTEM OPERATIVE // NEURAL CORE ONLINE ]
+    </text>
+
+    <!-- Main Name Title -->
+    <text x="500" y="98" class="title-text" font-size="38" filter="url(#glowCyan)">
+      LÊ BÁ CHIẾN
+    </text>
+
+    <!-- Subtitle -->
+    <text x="500" y="128" class="sub-text">
+      AI ENGINEER // DEEP LEARNING &amp; RAG SPECIALIST
+    </text>
+
+    <!-- Neon Divider Line -->
+    <line x1="250" y1="145" x2="750" y2="145" stroke="url(#lineGrad)" stroke-width="2"/>
+
+    <!-- Status Badges Bar -->
+    <g transform="translate(500, 185)">
+      <!-- Badge 1: Degree -->
+      <g transform="translate(-290, -14)">
+        <rect x="0" y="0" width="180" height="26" fill="#00f3ff" fill-opacity="0.1" stroke="#00f3ff" stroke-width="1" rx="4"/>
+        <text x="90" y="17" font-family="Courier New, monospace" font-size="11.5" font-weight="bold" fill="#00f3ff">B.S. IT (GREENWICH)</text>
+      </g>
+
+      <!-- Badge 2: English -->
+      <g transform="translate(-90, -14)">
+        <rect x="0" y="0" width="180" height="26" fill="#ff0055" fill-opacity="0.1" stroke="#ff0055" stroke-width="1" rx="4"/>
+        <text x="90" y="17" font-family="Courier New, monospace" font-size="11.5" font-weight="bold" fill="#ff0055">ENGLISH: VSTEP B2</text>
+      </g>
+
+      <!-- Badge 3: Status -->
+      <g transform="translate(110, -14)">
+        <rect x="0" y="0" width="180" height="26" fill="#00ff66" fill-opacity="0.1" stroke="#00ff66" stroke-width="1" rx="4"/>
+        <text x="90" y="17" font-family="Courier New, monospace" font-size="11.5" font-weight="bold" fill="#00ff66" class="blinking">OPEN FOR AI ROLES</text>
+      </g>
+    </g>
+  </g>
+</svg>
