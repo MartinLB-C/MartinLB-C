@@ -1,0 +1,432 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 1250" width="100%" height="100%">
+  <defs>
+    <!-- Dark Metallic Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#040814"/>
+      <stop offset="30%" stop-color="#091124"/>
+      <stop offset="70%" stop-color="#060c1b"/>
+      <stop offset="100%" stop-color="#02050d"/>
+    </linearGradient>
+
+    <!-- Card Dark Glass Gradient -->
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b162e" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#101f42" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#081226" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <!-- Tech Accent Gradients -->
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f3ff"/>
+      <stop offset="50%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+
+    <linearGradient id="violetGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="50%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#e879f9"/>
+    </linearGradient>
+
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="glowViolet" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Tech Grid Pattern -->
+    <pattern id="techGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#00f3ff" stroke-width="0.5" stroke-opacity="0.06"/>
+    </pattern>
+
+    <!-- Dot Matrix Pattern -->
+    <pattern id="dotPattern" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#38bdf8" opacity="0.1"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .font-title { font-family: 'Segoe UI', -apple-system, Roboto, sans-serif; font-weight: 900; }
+    .font-sans { font-family: 'Segoe UI', -apple-system, sans-serif; }
+    .font-mono { font-family: 'Consolas', 'Courier New', monospace; }
+  </style>
+
+  <!-- Deep Obsidian Cyber Background -->
+  <rect width="850" height="1250" fill="url(#bgGrad)"/>
+  <rect width="850" height="1250" fill="url(#techGrid)"/>
+  <rect width="850" height="1250" fill="url(#dotPattern)"/>
+
+  <!-- Outer Frame Cyber Border -->
+  <rect x="12" y="12" width="826" height="1226" fill="none" stroke="#00f3ff" stroke-width="1.5" stroke-opacity="0.4" rx="6"/>
+  <rect x="16" y="16" width="818" height="1218" fill="none" stroke="#38bdf8" stroke-width="0.8" stroke-opacity="0.2" rx="4"/>
+
+  <!-- Corner Tech Accents -->
+  <path d="M 12 35 L 12 12 L 35 12" stroke="#00f3ff" stroke-width="3" fill="none" filter="url(#glowCyan)"/>
+  <path d="M 838 35 L 838 12 L 815 12" stroke="#00f3ff" stroke-width="3" fill="none" filter="url(#glowCyan)"/>
+  <path d="M 12 1215 L 12 1238 L 35 1238" stroke="#00f3ff" stroke-width="3" fill="none" filter="url(#glowCyan)"/>
+  <path d="M 838 1215 L 838 1238 L 815 1238" stroke="#00f3ff" stroke-width="3" fill="none" filter="url(#glowCyan)"/>
+
+  <!-- ================= HEADER SECTION ================= -->
+  <g transform="translate(45, 55)">
+    <!-- Header Left Accent Line -->
+    <rect x="0" y="0" width="5" height="50" fill="#00f3ff" filter="url(#glowCyan)"/>
+    
+    <g transform="translate(20, 0)">
+      <text x="0" y="22" class="font-title" font-size="28" fill="url(#titleGrad)" letter-spacing="2">
+        LÊ BÁ CHIẾN
+      </text>
+      <text x="0" y="44" class="font-mono" font-size="14" font-weight="700" fill="#00f3ff" letter-spacing="1">
+        AI ENGINEER // DEEP LEARNING &amp; RAG ARCHITECTURE SPECIALIST
+      </text>
+    </g>
+
+    <!-- Header Status Badge Right -->
+    <g transform="translate(560, 5)">
+      <rect width="200" height="36" fill="#0a1936" stroke="#00f3ff" stroke-width="1" rx="4" filter="url(#glowCyan)"/>
+      <circle cx="20" cy="18" r="4" fill="#10b981" filter="url(#glowCyan)"/>
+      <text x="32" y="22" class="font-mono" font-size="11" font-weight="bold" fill="#38bdf8">
+        STATUS: AVAILABLE FOR AI ROLES
+      </text>
+    </g>
+  </g>
+
+  <!-- Divider Line -->
+  <line x1="45" y1="120" x2="805" y2="120" stroke="url(#cyanGrad)" stroke-width="1.5" opacity="0.8"/>
+
+  <!-- ================= ROW 1: PROFILE DOSSIER & EDUCATION ================= -->
+
+  <!-- Card 1: CANDIDATE DOSSIER (x: 45, y: 140, w: 470, h: 220) -->
+  <g transform="translate(45, 140)">
+    <rect width="470" height="220" fill="url(#cardBg)" rx="6" stroke="#00f3ff" stroke-width="1.2" stroke-opacity="0.7"/>
+    <rect width="470" height="220" fill="url(#techGrid)" rx="6"/>
+
+    <!-- Header -->
+    <path d="M 0 0 L 220 0 L 240 24 L 0 24 Z" fill="#0c2044" stroke="#00f3ff" stroke-width="1"/>
+    <text x="15" y="16" class="font-sans" font-weight="800" font-size="11" fill="#00f3ff" letter-spacing="1">
+      👤 PROFILE DOSSIER &amp; CREDENTIALS
+    </text>
+
+    <!-- Content List -->
+    <g transform="translate(20, 45)">
+      <g transform="translate(0, 0)">
+        <text x="0" y="12" class="font-mono" font-size="12" font-weight="bold" fill="#94a3b8">FULL NAME:</text>
+        <text x="120" y="12" class="font-sans" font-size="13" font-weight="bold" fill="#ffffff">Lê Bá Chiến (MartinLB-C)</text>
+      </g>
+
+      <g transform="translate(0, 32)">
+        <text x="0" y="12" class="font-mono" font-size="12" font-weight="bold" fill="#94a3b8">DEGREE:</text>
+        <text x="120" y="12" class="font-sans" font-size="13" font-weight="bold" fill="#e2e8f0">B.Sc Information Technology</text>
+        <text x="120" y="30" class="font-sans" font-size="12" fill="#38bdf8">Greenwich University Vietnam (2021–2025)</text>
+      </g>
+
+      <g transform="translate(0, 80)">
+        <text x="0" y="12" class="font-mono" font-size="12" font-weight="bold" fill="#94a3b8">LANGUAGE:</text>
+        <rect x="120" y="-3" width="130" height="22" rx="4" fill="#062d42" stroke="#00f3ff" stroke-width="1"/>
+        <text x="128" y="12" class="font-sans" font-size="12" font-weight="bold" fill="#00f3ff">VSTEP B2 Certified</text>
+      </g>
+
+      <g transform="translate(0, 118)">
+        <text x="0" y="12" class="font-mono" font-size="12" font-weight="bold" fill="#94a3b8">CONTACT:</text>
+        <text x="120" y="12" class="font-sans" font-size="12" fill="#e2e8f0">bachien0987@gmail.com  |  0365667716</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Card 2: CORE FOCUS METRICS (x: 530, y: 140, w: 275, h: 220) -->
+  <g transform="translate(530, 140)">
+    <rect width="275" height="220" fill="url(#cardBg)" rx="6" stroke="#00f3ff" stroke-width="1.2" stroke-opacity="0.7"/>
+    <rect width="275" height="220" fill="url(#techGrid)" rx="6"/>
+
+    <!-- Header -->
+    <path d="M 0 0 L 170 0 L 190 24 L 0 24 Z" fill="#0c2044" stroke="#00f3ff" stroke-width="1"/>
+    <text x="15" y="16" class="font-sans" font-weight="800" font-size="11" fill="#00f3ff" letter-spacing="1">
+      🎯 RESEARCH FOCUS
+    </text>
+
+    <g transform="translate(20, 48)">
+      <!-- Metric 1 -->
+      <g transform="translate(0, 0)">
+        <text x="0" y="12" class="font-sans" font-size="12" font-weight="bold" fill="#e2e8f0">Deep Learning &amp; FER Research</text>
+        <text x="0" y="28" class="font-mono" font-size="11" fill="#10b981">1+ Year Intensive Study</text>
+        <rect x="0" y="34" width="235" height="8" rx="4" fill="#091b36"/>
+        <rect x="0" y="34" width="220" height="8" rx="4" fill="url(#cyanGrad)"/>
+      </g>
+
+      <!-- Metric 2 -->
+      <g transform="translate(0, 56)">
+        <text x="0" y="12" class="font-sans" font-size="12" font-weight="bold" fill="#e2e8f0">RAG Hybrid Search Recall</text>
+        <text x="0" y="28" class="font-mono" font-size="11" fill="#00f3ff">FAISS + BM25 Optimized</text>
+        <rect x="0" y="34" width="235" height="8" rx="4" fill="#091b36"/>
+        <rect x="0" y="34" width="210" height="8" rx="4" fill="url(#violetGrad)"/>
+      </g>
+
+      <!-- Metric 3 -->
+      <g transform="translate(0, 112)">
+        <text x="0" y="12" class="font-sans" font-size="12" font-weight="bold" fill="#e2e8f0">Software System Reliability</text>
+        <text x="0" y="28" class="font-mono" font-size="11" fill="#38bdf8">C# .NET &amp; SQL Infrastructure</text>
+        <rect x="0" y="34" width="235" height="8" rx="4" fill="#091b36"/>
+        <rect x="0" y="34" width="195" height="8" rx="4" fill="url(#emeraldGrad)"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= ROW 2: TECHNICAL DOMAINS & ARCHITECTURE ================= -->
+
+  <!-- Card 3: DEEP LEARNING & COMPUTER VISION (x: 45, y: 380, w: 375, h: 280) -->
+  <g transform="translate(45, 380)">
+    <rect width="375" height="280" fill="url(#cardBg)" rx="6" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.8"/>
+    <rect width="375" height="280" fill="url(#techGrid)" rx="6"/>
+
+    <!-- Header -->
+    <path d="M 0 0 L 260 0 L 280 26 L 0 26 Z" fill="#0c2044" stroke="#38bdf8" stroke-width="1"/>
+    <text x="15" y="17" class="font-sans" font-weight="800" font-size="11" fill="#38bdf8" letter-spacing="1">
+      👁️ COMPUTER VISION &amp; DEEP LEARNING
+    </text>
+
+    <g transform="translate(20, 48)">
+      <!-- Bullet 1 -->
+      <g transform="translate(0, 0)">
+        <circle cx="6" cy="6" r="3" fill="#00f3ff" filter="url(#glowCyan)"/>
+        <text x="18" y="10" class="font-sans" font-size="13" font-weight="bold" fill="#ffffff">Facial Emotion Recognition (FER)</text>
+        <text x="18" y="28" class="font-sans" font-size="11.5" fill="#94a3b8">Over 1 year of hands-on model architecture research with PyTorch framework.</text>
+      </g>
+
+      <!-- Bullet 2 -->
+      <g transform="translate(0, 56)">
+        <circle cx="6" cy="6" r="3" fill="#00f3ff" filter="url(#glowCyan)"/>
+        <text x="18" y="10" class="font-sans" font-size="13" font-weight="bold" fill="#ffffff">CNNs &amp; Vision Transformers (ViT)</text>
+        <text x="18" y="28" class="font-sans" font-size="11.5" fill="#94a3b8">Engineered ResNet, EfficientNet, MobileNet &amp; ViT Tiny for emotion classification.</text>
+      </g>
+
+      <!-- Bullet 3 -->
+      <g transform="translate(0, 112)">
+        <circle cx="6" cy="6" r="3" fill="#00f3ff" filter="url(#glowCyan)"/>
+        <text x="18" y="10" class="font-sans" font-weight="bold" font-size="13" fill="#ffffff">Advanced Data Augmentation</text>
+        <text x="18" y="28" class="font-sans" font-size="11.5" fill="#94a3b8">Implemented AugMix, RandAugment &amp; TrivialAugment to boost generalization.</text>
+      </g>
+
+      <!-- Bullet 4 -->
+      <g transform="translate(0, 168)">
+        <circle cx="6" cy="6" r="3" fill="#00f3ff" filter="url(#glowCyan)"/>
+        <text x="18" y="10" class="font-sans" font-weight="bold" font-size="13" fill="#ffffff">3D Point Cloud &amp; LiDAR Annotation</text>
+        <text x="18" y="28" class="font-sans" font-size="11.5" fill="#94a3b8">Experience in 3D bounding box labeling and spatial dataset preprocessing.</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Card 4: RAG ARCHITECTURE & ADVANCED LLM (x: 430, y: 380, w: 375, h: 280) -->
+  <g transform="translate(430, 380)">
+    <rect width="375" height="280" fill="url(#cardBg)" rx="6" stroke="#8b5cf6" stroke-width="1.2" stroke-opacity="0.8"/>
+    <rect width="375" height="280" fill="url(#techGrid)" rx="6"/>
+
+    <!-- Header -->
+    <path d="M 0 0 L 250 0 L 270 26 L 0 26 Z" fill="#1c1038" stroke="#8b5cf6" stroke-width="1"/>
+    <text x="15" y="17" class="font-sans" font-weight="800" font-size="11" fill="#c084fc" letter-spacing="1">
+      🧠 RAG ARCHITECTURE &amp; LLM SYSTEMS
+    </text>
+
+    <g transform="translate(20, 48)">
+      <!-- Bullet 1 -->
+      <g transform="translate(0, 0)">
+        <circle cx="6" cy="6" r="3" fill="#c084fc" filter="url(#glowViolet)"/>
+        <text x="18" y="10" class="font-sans" font-size="13" font-weight="bold" fill="#ffffff">Hybrid Search Engine Pipeline</text>
+        <text x="18" y="28" class="font-sans" font-size="11.5" fill="#94a3b8">Integrated FAISS (Dense Vector Search) + BM25 (Sparse Keyword Search).</text>
+      </g>
+
+      <!-- Bullet 2 -->
+      <g transform="translate(0, 56)">
+        <circle cx="6" cy="6" r="3" fill="#c084fc" filter="url(#glowViolet)"/>
+        <text x="18" y="10" class="font-sans" font-size="13" font-weight="bold" fill="#ffffff">Cross-Encoder Reranking</text>
+        <text x="18" y="28" class="font-sans" font-size="11.5" fill="#94a3b8">Refined top-k document retrieval precision using neural rerankers.</text>
+      </g>
+
+      <!-- Bullet 3 -->
+      <g transform="translate(0, 112)">
+        <circle cx="6" cy="6" r="3" fill="#c084fc" filter="url(#glowViolet)"/>
+        <text x="18" y="10" class="font-sans" font-weight="bold" font-size="13" fill="#ffffff">Prompt Engineering &amp; Question Rewriting</text>
+        <text x="18" y="28" class="font-sans" font-size="11.5" fill="#94a3b8">Designed query expansion and context rewriting workflows for complex QA.</text>
+      </g>
+
+      <!-- Bullet 4 -->
+      <g transform="translate(0, 168)">
+        <circle cx="6" cy="6" r="3" fill="#c084fc" filter="url(#glowViolet)"/>
+        <text x="18" y="10" class="font-sans" font-weight="bold" font-size="13" fill="#ffffff">LLM Integration &amp; Evaluation</text>
+        <text x="18" y="28" class="font-sans" font-size="11.5" fill="#94a3b8">Deploys Gemini API &amp; local Ollama models with Faithfulness evaluation.</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= ROW 3: TECHNICAL STACK & MATRIX ================= -->
+
+  <!-- Card 5: TECHNICAL STACK MATRIX (x: 45, y: 680, w: 760, h: 220) -->
+  <g transform="translate(45, 680)">
+    <rect width="760" height="220" fill="url(#cardBg)" rx="6" stroke="#00f3ff" stroke-width="1.2" stroke-opacity="0.8"/>
+    <rect width="760" height="220" fill="url(#techGrid)" rx="6"/>
+
+    <!-- Header -->
+    <path d="M 0 0 L 260 0 L 285 26 L 0 26 Z" fill="#0c2044" stroke="#00f3ff" stroke-width="1"/>
+    <text x="15" y="17" class="font-sans" font-weight="800" font-size="11" fill="#00f3ff" letter-spacing="1">
+      ⚙️ TECHNICAL STACK &amp; ENGINEERING TOOLKITS
+    </text>
+
+    <g transform="translate(25, 45)">
+      <!-- Cat 1 -->
+      <g transform="translate(0, 0)">
+        <text x="0" y="12" class="font-mono" font-size="12" font-weight="bold" fill="#00f3ff">&gt; AI &amp; FRAMEWORKS:</text>
+        <g transform="translate(140, -4)">
+          <rect x="0" y="0" width="85" height="24" rx="4" fill="#06283d" stroke="#00f3ff" stroke-width="1"/>
+          <text x="12" y="16" class="font-sans" font-size="11" font-weight="bold" fill="#ffffff">PyTorch</text>
+
+          <rect x="95" y="0" width="105" height="24" rx="4" fill="#06283d" stroke="#00f3ff" stroke-width="1"/>
+          <text x="107" y="16" class="font-sans" font-size="11" font-weight="bold" fill="#ffffff">Scikit-Learn</text>
+
+          <rect x="210" y="0" width="135" height="24" rx="4" fill="#06283d" stroke="#00f3ff" stroke-width="1"/>
+          <text x="222" y="16" class="font-sans" font-size="11" font-weight="bold" fill="#ffffff">Timm / Torchmetrics</text>
+
+          <rect x="355" y="0" width="95" height="24" rx="4" fill="#06283d" stroke="#00f3ff" stroke-width="1"/>
+          <text x="367" y="16" class="font-sans" font-size="11" font-weight="bold" fill="#ffffff">OpenCV</text>
+        </g>
+      </g>
+
+      <!-- Cat 2 -->
+      <g transform="translate(0, 40)">
+        <text x="0" y="12" class="font-mono" font-size="12" font-weight="bold" fill="#c084fc">&gt; RAG &amp; VECTOR DB:</text>
+        <g transform="translate(140, -4)">
+          <rect x="0" y="0" width="95" height="24" rx="4" fill="#1e1038" stroke="#8b5cf6" stroke-width="1"/>
+          <text x="12" y="16" class="font-sans" font-size="11" font-weight="bold" fill="#ffffff">FAISS Vector DB</text>
+
+          <rect x="105" y="0" width="85" height="24" rx="4" fill="#1e1038" stroke="#8b5cf6" stroke-width="1"/>
+          <text x="117" y="16" class="font-sans" font-size="11" font-weight="bold" fill="#ffffff">BM25 Search</text>
+
+          <rect x="200" y="0" width="95" height="24" rx="4" fill="#1e1038" stroke="#8b5cf6" stroke-width="1"/>
+          <text x="212" y="16" class="font-sans" font-size="11" font-weight="bold" fill="#ffffff">Gemini API</text>
+
+          <rect x="305" y="0" width="85" height="24" rx="4" fill="#1e1038" stroke="#8b5cf6" stroke-width="1"/>
+          <text x="317" y="16" class="font-sans" font-size="11" font-weight="bold" fill="#ffffff">Ollama Local</text>
+        </g>
+      </g>
+
+      <!-- Cat 3 -->
+      <g transform="translate(0, 80)">
+        <text x="0" y="12" class="font-mono" font-size="12" font-weight="bold" fill="#10b981">&gt; LANGUAGES &amp; INFRA:</text>
+        <g transform="translate(140, -4)">
+          <rect x="0" y="0" width="85" height="24" rx="4" fill="#04261d" stroke="#10b981" stroke-width="1"/>
+          <text x="12" y="16" class="font-sans" font-size="11" font-weight="bold" fill="#ffffff">Python 3.x</text>
+
+          <rect x="95" y="0" width="105" height="24" rx="4" fill="#04261d" stroke="#10b981" stroke-width="1"/>
+          <text x="107" y="16" class="font-sans" font-size="11" font-weight="bold" fill="#ffffff">C# (.NET Core)</text>
+
+          <rect x="210" y="0" width="95" height="24" rx="4" fill="#04261d" stroke="#10b981" stroke-width="1"/>
+          <text x="222" y="16" class="font-sans" font-size="11" font-weight="bold" fill="#ffffff">SQL Server</text>
+
+          <rect x="315" y="0" width="75" height="24" rx="4" fill="#04261d" stroke="#10b981" stroke-width="1"/>
+          <text x="327" y="16" class="font-sans" font-size="11" font-weight="bold" fill="#ffffff">Docker</text>
+
+          <rect x="400" y="0" width="65" height="24" rx="4" fill="#04261d" stroke="#10b981" stroke-width="1"/>
+          <text x="412" y="16" class="font-sans" font-size="11" font-weight="bold" fill="#ffffff">Git</text>
+        </g>
+      </g>
+
+      <!-- Cat 4 -->
+      <g transform="translate(0, 120)">
+        <text x="0" y="12" class="font-mono" font-size="12" font-weight="bold" fill="#38bdf8">&gt; EVALUATION METRICS:</text>
+        <g transform="translate(140, -4)">
+          <rect x="0" y="0" width="135" height="24" rx="4" fill="#082238" stroke="#38bdf8" stroke-width="1"/>
+          <text x="12" y="16" class="font-sans" font-size="11" font-weight="bold" fill="#ffffff">F1-Score / Accuracy</text>
+
+          <rect x="145" y="0" width="145" height="24" rx="4" fill="#082238" stroke="#38bdf8" stroke-width="1"/>
+          <text x="157" y="16" class="font-sans" font-size="11" font-weight="bold" fill="#ffffff">Confusion Matrix / Loss</text>
+
+          <rect x="300" y="0" width="165" height="24" rx="4" fill="#082238" stroke="#38bdf8" stroke-width="1"/>
+          <text x="312" y="16" class="font-sans" font-size="11" font-weight="bold" fill="#ffffff">RAG Faithfulness &amp; Recall</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= ROW 4: ACCOMPLISHMENTS & SUMMARY ================= -->
+
+  <!-- Card 6: KEY HIGHLIGHTS & CAREER GOALS (x: 45, y: 920, w: 760, h: 220) -->
+  <g transform="translate(45, 920)">
+    <rect width="760" height="220" fill="url(#cardBg)" rx="6" stroke="#10b981" stroke-width="1.2" stroke-opacity="0.8"/>
+    <rect width="760" height="220" fill="url(#techGrid)" rx="6"/>
+
+    <!-- Header -->
+    <path d="M 0 0 L 250 0 L 275 26 L 0 26 Z" fill="#05261e" stroke="#10b981" stroke-width="1"/>
+    <text x="15" y="17" class="font-sans" font-weight="800" font-size="11" fill="#10b981" letter-spacing="1">
+      🏆 KEY HIGHLIGHTS &amp; CAREER SUMMARY
+    </text>
+
+    <!-- Grid 4 Badges -->
+    <g transform="translate(20, 48)">
+
+      <g transform="translate(0, 0)">
+        <rect width="170" height="145" fill="#061914" rx="6" stroke="#10b981" stroke-width="1"/>
+        <text x="85" y="32" font-size="22" text-anchor="middle">🔬</text>
+        <text x="85" y="60" class="font-sans" font-weight="bold" font-size="13" fill="#ffffff" text-anchor="middle">FER Research</text>
+        <text x="85" y="80" class="font-sans" font-size="11" fill="#94a3b8" text-anchor="middle">1+ Year Deep Learning</text>
+        <text x="85" y="98" class="font-sans" font-size="11" fill="#34d399" text-anchor="middle">Emotion Recognition</text>
+        <text x="85" y="116" class="font-sans" font-size="10" fill="#64748b" text-anchor="middle">PyTorch &amp; ViT</text>
+      </g>
+
+      <g transform="translate(185, 0)">
+        <rect width="170" height="145" fill="#061914" rx="6" stroke="#10b981" stroke-width="1"/>
+        <text x="85" y="32" font-size="22" text-anchor="middle">⚡</text>
+        <text x="85" y="60" class="font-sans" font-weight="bold" font-size="13" fill="#ffffff" text-anchor="middle">RAG Architecture</text>
+        <text x="85" y="80" class="font-sans" font-size="11" fill="#94a3b8" text-anchor="middle">FAISS + BM25 Hybrid</text>
+        <text x="85" y="98" class="font-sans" font-size="11" fill="#34d399" text-anchor="middle">Rerank &amp; LLM RAG</text>
+        <text x="85" y="116" class="font-sans" font-size="10" fill="#64748b" text-anchor="middle">Gemini &amp; Ollama</text>
+      </g>
+
+      <g transform="translate(370, 0)">
+        <rect width="170" height="145" fill="#061914" rx="6" stroke="#10b981" stroke-width="1"/>
+        <text x="85" y="32" font-size="22" text-anchor="middle">🎓</text>
+        <text x="85" y="60" class="font-sans" font-weight="bold" font-size="13" fill="#ffffff" text-anchor="middle">Greenwich Graduate</text>
+        <text x="85" y="80" class="font-sans" font-size="11" fill="#94a3b8" text-anchor="middle">B.Sc Information Tech</text>
+        <text x="85" y="98" class="font-sans" font-size="11" fill="#34d399" text-anchor="middle">Bachelor's Degree</text>
+        <text x="85" y="116" class="font-sans" font-size="10" fill="#64748b" text-anchor="middle">2021 – 2025</text>
+      </g>
+
+      <g transform="translate(555, 0)">
+        <rect width="170" height="145" fill="#061914" rx="6" stroke="#10b981" stroke-width="1"/>
+        <text x="85" y="32" font-size="22" text-anchor="middle">📜</text>
+        <text x="85" y="60" class="font-sans" font-weight="bold" font-size="13" fill="#ffffff" text-anchor="middle">VSTEP B2 Certified</text>
+        <text x="85" y="80" class="font-sans" font-size="11" fill="#94a3b8" text-anchor="middle">English Proficiency</text>
+        <text x="85" y="98" class="font-sans" font-size="11" fill="#34d399" text-anchor="middle">Certified 2024</text>
+        <text x="85" y="116" class="font-sans" font-size="10" fill="#64748b" text-anchor="middle">Official License</text>
+      </g>
+
+    </g>
+  </g>
+
+  <!-- ================= FOOTER ================= -->
+  <g transform="translate(425, 1195)">
+    <line x1="-380" y1="0" x2="380" y2="0" stroke="url(#cyanGrad)" stroke-width="1" opacity="0.6"/>
+    <text x="0" y="20" class="font-mono" font-size="11" font-weight="bold" fill="#38bdf8" text-anchor="middle" letter-spacing="1">
+      LÊ BÁ CHIẾN // AI ENGINEER PROFILE DOSSIER — READY FOR PRODUCTION DEPLOYMENT
+    </text>
+  </g>
+
+</svg>

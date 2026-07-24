@@ -1,0 +1,654 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 1480" width="100%" height="100%">
+  <defs>
+    <!-- Dark Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a0518"/>
+      <stop offset="30%" stop-color="#120826"/>
+      <stop offset="70%" stop-color="#0e061e"/>
+      <stop offset="100%" stop-color="#06030d"/>
+    </linearGradient>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#130a2a" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#1c0f3d" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0f0722" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <linearGradient id="cardBgDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e071e"/>
+      <stop offset="100%" stop-color="#080412"/>
+    </linearGradient>
+
+    <!-- Glowing Purple Gradients -->
+    <linearGradient id="purpleGlowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="50%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#e879f9"/>
+    </linearGradient>
+
+    <linearGradient id="pinkGlowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d946ef"/>
+      <stop offset="50%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#fb7185"/>
+    </linearGradient>
+
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#e9d5ff"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <!-- Progress Bar Gradient -->
+    <linearGradient id="hpGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="50%" stop-color="#d946ef"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+
+    <linearGradient id="xpGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#d946ef"/>
+    </linearGradient>
+
+    <!-- Radar Fill Gradient -->
+    <linearGradient id="radarFill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#7e22ce" stop-opacity="0.25"/>
+    </linearGradient>
+
+    <!-- Neon Glow Filters -->
+    <filter id="glowPurple" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="glowPurpleStrong" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur1"/>
+      <feGaussianBlur stdDeviation="3" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Background Hexagon Pattern -->
+    <pattern id="hexPattern" width="28" height="48.5" patternUnits="userSpaceOnUse">
+      <path d="M 14 0 L 28 8.08 L 28 24.25 L 14 32.33 L 0 24.25 L 0 8.08 Z M 0 48.5 L 14 40.42 L 28 48.5" fill="none" stroke="#7e22ce" stroke-width="0.6" stroke-opacity="0.12"/>
+    </pattern>
+
+    <!-- Grid Pattern -->
+    <pattern id="gridPattern" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#a855f7" stroke-width="0.5" stroke-opacity="0.08"/>
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes runeRotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.6; }
+      50% { opacity: 1; }
+    }
+    .rune-ring {
+      transform-origin: 195px 445px;
+      animation: runeRotate 60s linear infinite;
+    }
+    .pulsing {
+      animation: pulseGlow 3s ease-in-out infinite;
+    }
+    .font-title { font-family: 'Cinzel', 'Trajan Pro', 'Segoe UI', serif; font-weight: 900; }
+    .font-sans { font-family: 'Segoe UI', -apple-system, sans-serif; }
+    .font-mono { font-family: 'Consolas', 'Courier New', monospace; }
+  </style>
+
+  <!-- Deep Obsidian Background -->
+  <rect width="850" height="1480" fill="url(#bgGrad)"/>
+  <rect width="850" height="1480" fill="url(#hexPattern)"/>
+  <rect width="850" height="1480" fill="url(#gridPattern)"/>
+
+  <!-- Outer Frame Neon Border -->
+  <rect x="10" y="10" width="830" height="1460" fill="none" stroke="#7e22ce" stroke-width="1.5" stroke-opacity="0.5" rx="8"/>
+  <rect x="14" y="14" width="822" height="1452" fill="none" stroke="#c084fc" stroke-width="0.8" stroke-opacity="0.3" rx="6"/>
+
+  <!-- Outer Corner Accents -->
+  <path d="M 10 40 L 10 10 L 40 10" stroke="#c084fc" stroke-width="3" fill="none" filter="url(#glowPurple)"/>
+  <path d="M 840 40 L 840 10 L 810 10" stroke="#c084fc" stroke-width="3" fill="none" filter="url(#glowPurple)"/>
+  <path d="M 10 1440 L 10 1470 L 40 1470" stroke="#c084fc" stroke-width="3" fill="none" filter="url(#glowPurple)"/>
+  <path d="M 840 1440 L 840 1470 L 810 1470" stroke="#c084fc" stroke-width="3" fill="none" filter="url(#glowPurple)"/>
+
+  <!-- ================= HEADER SECTION ================= -->
+  <g transform="translate(425, 60)" text-anchor="middle">
+    <!-- Header Ambient Light -->
+    <ellipse cx="0" cy="15" rx="280" ry="35" fill="#a855f7" opacity="0.15" filter="url(#glowPurpleStrong)"/>
+    
+    <!-- Title -->
+    <text x="0" y="0" class="font-title" font-size="34" fill="url(#titleGrad)" letter-spacing="4" filter="url(#glowPurple)">
+      SOLO LEVELING SYSTEM
+    </text>
+    
+    <!-- Subtitle Banner Box -->
+    <rect x="-170" y="12" width="340" height="28" fill="#1e1035" stroke="#c084fc" stroke-width="1.2" rx="4" filter="url(#glowPurple)"/>
+    <text x="0" y="31" class="font-sans" font-size="14" font-weight="800" fill="#f3e8ff" letter-spacing="3">
+      AI ENGINEER CV &amp; HABIT TRACKER
+    </text>
+  </g>
+
+  <!-- Header Ornamental Line -->
+  <g transform="translate(425, 110)">
+    <line x1="-380" y1="0" x2="380" y2="0" stroke="url(#purpleGlowGrad)" stroke-width="1.5" opacity="0.8"/>
+    <polygon points="0,-5 8,0 0,5 -8,0" fill="#c084fc" filter="url(#glowPurple)"/>
+    <circle cx="-200" cy="0" r="3" fill="#a855f7"/>
+    <circle cx="200" cy="0" r="3" fill="#a855f7"/>
+  </g>
+
+  <!-- ================= TOP ROW ================= -->
+
+  <!-- 1. TASK MANAGEMENT / CV QUEST LOG (Top Left, x: 30, y: 130, w: 380, h: 220) -->
+  <g transform="translate(30, 130)">
+    <!-- Card Frame -->
+    <rect width="385" height="225" fill="url(#cardBg)" rx="8" stroke="#a855f7" stroke-width="1.2" stroke-opacity="0.8"/>
+    <rect width="385" height="225" fill="url(#gridPattern)" rx="8"/>
+    
+    <!-- Header Title -->
+    <path d="M 0 0 L 170 0 L 190 26 L 0 26 Z" fill="#2d154c" stroke="#c084fc" stroke-width="1"/>
+    <text x="15" y="18" class="font-sans" font-weight="800" font-size="12" fill="#e9d5ff" letter-spacing="1">
+      TASK MANAGEMENT
+    </text>
+    
+    <!-- Chain Ornament -->
+    <path d="M 330 15 L 370 15 M 345 10 L 345 20 M 360 10 L 360 20" stroke="#a855f7" stroke-width="1.5" opacity="0.6"/>
+
+    <!-- Quest Checkboxes -->
+    <g transform="translate(20, 48)">
+      <!-- Item 1 -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="20" height="20" rx="4" fill="#2a1244" stroke="#c084fc" stroke-width="1.5"/>
+        <path d="M 4 10 L 8 14 L 16 5" fill="none" stroke="#d946ef" stroke-width="2.5" filter="url(#glowPurple)"/>
+        <text x="32" y="15" class="font-sans" font-weight="700" font-size="13" fill="#f3e8ff">
+          FER Model Optimization (PyTorch)
+        </text>
+        <circle cx="330" cy="10" r="8" fill="#2a1244" stroke="#c084fc" stroke-width="1"/>
+        <path d="M 326 10 L 329 13 L 334 8" fill="none" stroke="#c084fc" stroke-width="1.5"/>
+      </g>
+
+      <!-- Item 2 -->
+      <g transform="translate(0, 40)">
+        <rect x="0" y="0" width="20" height="20" rx="4" fill="#2a1244" stroke="#c084fc" stroke-width="1.5"/>
+        <path d="M 4 10 L 8 14 L 16 5" fill="none" stroke="#d946ef" stroke-width="2.5" filter="url(#glowPurple)"/>
+        <text x="32" y="15" class="font-sans" font-weight="700" font-size="13" fill="#f3e8ff">
+          RAG Hybrid Search (FAISS + BM25)
+        </text>
+        <circle cx="330" cy="10" r="8" fill="#2a1244" stroke="#c084fc" stroke-width="1"/>
+        <path d="M 326 10 L 329 13 L 334 8" fill="none" stroke="#c084fc" stroke-width="1.5"/>
+      </g>
+
+      <!-- Item 3 -->
+      <g transform="translate(0, 80)">
+        <rect x="0" y="0" width="20" height="20" rx="4" fill="#2a1244" stroke="#c084fc" stroke-width="1.5"/>
+        <path d="M 4 10 L 8 14 L 16 5" fill="none" stroke="#d946ef" stroke-width="2.5" filter="url(#glowPurple)"/>
+        <text x="32" y="15" class="font-sans" font-weight="700" font-size="13" fill="#f3e8ff">
+          Vision Transformer (ViT) Fine-tuning
+        </text>
+        <circle cx="330" cy="10" r="8" fill="#2a1244" stroke="#c084fc" stroke-width="1"/>
+        <path d="M 326 10 L 329 13 L 334 8" fill="none" stroke="#c084fc" stroke-width="1.5"/>
+      </g>
+
+      <!-- Item 4 -->
+      <g transform="translate(0, 120)">
+        <rect x="0" y="0" width="20" height="20" rx="4" fill="#2a1244" stroke="#c084fc" stroke-width="1.5"/>
+        <path d="M 4 10 L 8 14 L 16 5" fill="none" stroke="#d946ef" stroke-width="2.5" filter="url(#glowPurple)"/>
+        <text x="32" y="15" class="font-sans" font-weight="700" font-size="13" fill="#f3e8ff">
+          LLM Prompt &amp; Question Rewriting
+        </text>
+        <circle cx="330" cy="10" r="8" fill="#2a1244" stroke="#c084fc" stroke-width="1"/>
+        <path d="M 326 10 L 329 13 L 334 8" fill="none" stroke="#c084fc" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- 2. DAILY QUESTS & ACTIVE SKILLS (Top Right, x: 435, y: 130, w: 385, h: 225) -->
+  <g transform="translate(435, 130)">
+    <!-- Card Frame -->
+    <rect width="385" height="225" fill="url(#cardBg)" rx="8" stroke="#a855f7" stroke-width="1.2" stroke-opacity="0.8"/>
+    <rect width="385" height="225" fill="url(#gridPattern)" rx="8"/>
+
+    <!-- Header Title -->
+    <path d="M 385 0 L 215 0 L 195 26 L 385 26 Z" fill="#2d154c" stroke="#c084fc" stroke-width="1"/>
+    <text x="245" y="18" class="font-sans" font-weight="800" font-size="12" fill="#e9d5ff" letter-spacing="1">
+      DAILY QUESTS
+    </text>
+
+    <!-- Shield & Crossed Swords Icon (Left side inside box) -->
+    <g transform="translate(25, 45)">
+      <polygon points="40,10 70,25 70,70 40,95 10,70 10,25" fill="#24103a" stroke="#c084fc" stroke-width="2" filter="url(#glowPurple)"/>
+      <polygon points="40,18 62,30 62,65 40,84 18,65 18,30" fill="#130822" stroke="#a855f7" stroke-width="1"/>
+      <!-- Swords -->
+      <line x1="15" y1="15" x2="65" y2="85" stroke="#e9d5ff" stroke-width="3"/>
+      <line x1="65" y1="15" x2="15" y2="85" stroke="#e9d5ff" stroke-width="3"/>
+      <circle cx="40" cy="50" r="8" fill="#d946ef" filter="url(#glowPurple)"/>
+    </g>
+
+    <!-- Progress Bars (Right side inside box) -->
+    <g transform="translate(125, 52)">
+      <!-- Quest 1 -->
+      <g transform="translate(0, 0)">
+        <text x="0" y="12" class="font-sans" font-weight="700" font-size="12" fill="#e9d5ff">
+          ⚔️ Deep Learning &amp; PyTorch Training
+        </text>
+        <rect x="0" y="18" width="235" height="10" rx="5" fill="#1e0c33" stroke="#7e22ce" stroke-width="1"/>
+        <rect x="0" y="18" width="220" height="10" rx="5" fill="url(#hpGrad)" filter="url(#glowPurple)"/>
+      </g>
+
+      <!-- Quest 2 -->
+      <g transform="translate(0, 42)">
+        <text x="0" y="12" class="font-sans" font-weight="700" font-size="12" fill="#e9d5ff">
+          🧠 RAG &amp; Vector Search Optimization
+        </text>
+        <rect x="0" y="18" width="235" height="10" rx="5" fill="#1e0c33" stroke="#7e22ce" stroke-width="1"/>
+        <rect x="0" y="18" width="205" height="10" rx="5" fill="url(#xpGrad)" filter="url(#glowPurple)"/>
+      </g>
+
+      <!-- Quest 3 -->
+      <g transform="translate(0, 84)">
+        <text x="0" y="12" class="font-sans" font-weight="700" font-size="12" fill="#e9d5ff">
+          ⚡ System Design &amp; C# / SQL Practice
+        </text>
+        <rect x="0" y="18" width="235" height="10" rx="5" fill="#1e0c33" stroke="#7e22ce" stroke-width="1"/>
+        <rect x="0" y="18" width="190" height="10" rx="5" fill="url(#purpleGlowGrad)" filter="url(#glowPurple)"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= MIDDLE ROW ================= -->
+
+  <!-- 3. CHARACTER PORTRAIT & MAGIC RUNE CIRCLE (Center Left, x: 30, y: 375, w: 385, h: 360) -->
+  <g transform="translate(30, 375)">
+    <!-- Magic Rune Ring Animation Container -->
+    <g transform="translate(192, 175)">
+      <!-- Outer Glow Ring -->
+      <circle cx="0" cy="0" r="145" fill="none" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="8,6" opacity="0.6"/>
+      <circle cx="0" cy="0" r="135" fill="#2e1052" opacity="0.3" filter="url(#glowPurpleStrong)"/>
+      <circle cx="0" cy="0" r="130" fill="none" stroke="#c084fc" stroke-width="2" filter="url(#glowPurple)"/>
+      
+      <!-- Rotating Rune Ring -->
+      <g class="rune-ring">
+        <circle cx="0" cy="0" r="120" fill="none" stroke="#d946ef" stroke-width="1.5" stroke-dasharray="12 6 4 6"/>
+        <!-- Rune Symbols around circle -->
+        <text x="0" y="-123" fill="#e9d5ff" font-size="11" text-anchor="middle" font-weight="bold">ᚱ</text>
+        <text x="87" y="-87" fill="#e9d5ff" font-size="11" text-anchor="middle" font-weight="bold">ᚦ</text>
+        <text x="123" y="0" fill="#e9d5ff" font-size="11" text-anchor="middle" font-weight="bold">ᚫ</text>
+        <text x="87" y="87" fill="#e9d5ff" font-size="11" text-anchor="middle" font-weight="bold">ᚷ</text>
+        <text x="0" y="128" fill="#e9d5ff" font-size="11" text-anchor="middle" font-weight="bold">ᚹ</text>
+        <text x="-87" y="87" fill="#e9d5ff" font-size="11" text-anchor="middle" font-weight="bold">ᚺ</text>
+        <text x="-123" y="0" fill="#e9d5ff" font-size="11" text-anchor="middle" font-weight="bold">ᚾ</text>
+        <text x="-87" y="-87" fill="#e9d5ff" font-size="11" text-anchor="middle" font-weight="bold">ᛁ</text>
+      </g>
+
+      <!-- Inner Circle Frame -->
+      <circle cx="0" cy="0" r="105" fill="#0f0720" stroke="#c084fc" stroke-width="2"/>
+
+      <!-- Shadow Monarch Silhouette -->
+      <g transform="translate(0, 10)">
+        <!-- Aura particles -->
+        <path d="M -60 40 Q -70 -20 0 -85 Q 70 -20 60 40 Z" fill="#8b5cf6" opacity="0.4" filter="url(#glowPurpleStrong)"/>
+        <!-- Cloak Silhouette -->
+        <path d="M -50 80 C -60 30, -35 -30, 0 -60 C 35 -30, 60 30, 50 80 C 25 75, -25 75, -50 80 Z" fill="#090314" stroke="#a855f7" stroke-width="1.5"/>
+        <!-- Head Hood -->
+        <path d="M -22 -20 C -25 -50, 0 -65, 22 -20 C 15 -10, -15 -10, -22 -20 Z" fill="#06020c"/>
+        <!-- Glowing Purple Eyes -->
+        <ellipse cx="-8" cy="-32" rx="4" ry="2" fill="#ffffff" filter="url(#glowPurple)"/>
+        <ellipse cx="8" cy="-32" rx="4" ry="2" fill="#ffffff" filter="url(#glowPurple)"/>
+        <circle cx="-8" cy="-32" r="2" fill="#d946ef"/>
+        <circle cx="8" cy="-32" r="2" fill="#d946ef"/>
+        <!-- Shadow Dagger / Sword -->
+        <path d="M -30 40 L -75 -20 L -65 -25 L -20 30 Z" fill="#1e0a38" stroke="#d946ef" stroke-width="1.5" filter="url(#glowPurple)"/>
+        <line x1="-75" y1="-20" x2="-20" y2="30" stroke="#ffffff" stroke-width="1.5"/>
+      </g>
+    </g>
+
+    <!-- CHARACTER STATS BOX (Bottom overlay box, x: 10, y: 220, w: 365, h: 130) -->
+    <g transform="translate(10, 220)">
+      <rect width="365" height="135" fill="url(#cardBg)" rx="8" stroke="#c084fc" stroke-width="1.5" filter="url(#glowPurple)"/>
+      <rect width="365" height="135" fill="url(#gridPattern)" rx="8"/>
+
+      <!-- Header -->
+      <rect x="15" y="-12" width="150" height="24" fill="#2d154c" stroke="#c084fc" stroke-width="1" rx="4"/>
+      <text x="90" y="4" class="font-sans" font-weight="900" font-size="12" fill="#ffffff" text-anchor="middle" letter-spacing="1">
+        CHARACTER STATS
+      </text>
+
+      <!-- Stats Content -->
+      <g transform="translate(20, 25)">
+        <!-- Name & Class -->
+        <text x="0" y="12" class="font-sans" font-weight="800" font-size="15" fill="#ffffff">
+          LÊ BÁ CHIẾN <tspan fill="#c084fc" font-size="12">(MartinLB-C)</tspan>
+        </text>
+        <text x="0" y="30" class="font-mono" font-weight="700" font-size="12" fill="#d946ef">
+          CLASS: SHADOW AI ENGINEER // LEVEL 99
+        </text>
+
+        <!-- HP Bar -->
+        <g transform="translate(0, 42)">
+          <text x="0" y="12" class="font-sans" font-weight="800" font-size="11" fill="#e9d5ff">HP</text>
+          <rect x="25" y="2" width="270" height="14" rx="4" fill="#1a092d" stroke="#7e22ce" stroke-width="1"/>
+          <rect x="25" y="2" width="250" height="14" rx="4" fill="url(#hpGrad)" filter="url(#glowPurple)"/>
+          <text x="160" y="13" class="font-mono" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">9999 / 9999 HP</text>
+          <!-- Skull Icon -->
+          <circle cx="310" cy="9" r="8" fill="#3b1566" stroke="#c084fc" stroke-width="1"/>
+          <text x="310" y="12" font-size="10" text-anchor="middle">💀</text>
+        </g>
+
+        <!-- Coins / Mana -->
+        <g transform="translate(0, 72)">
+          <text x="0" y="16" class="font-sans" font-weight="800" font-size="11" fill="#e9d5ff">COINS / MP:</text>
+          <!-- Gold Coins Stack -->
+          <g transform="translate(90, 0)">
+            <ellipse cx="12" cy="18" rx="10" ry="5" fill="#f59e0b" stroke="#b45309"/>
+            <ellipse cx="12" cy="14" rx="10" ry="5" fill="#fbbf24" stroke="#d97706"/>
+            <ellipse cx="12" cy="10" rx="10" ry="5" fill="#fef08a" stroke="#f59e0b"/>
+            <text x="30" y="16" class="font-mono" font-weight="900" font-size="15" fill="#fbbf24">9999G</text>
+          </g>
+          <text x="210" y="16" class="font-mono" font-weight="800" font-size="12" fill="#c084fc">MP: 100% (MAX)</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- 4. LEVEL UP PROGRESSION (Middle Right Top, x: 435, y: 375, w: 385, h: 160) -->
+  <g transform="translate(435, 375)">
+    <!-- Card Frame -->
+    <rect width="385" height="160" fill="url(#cardBg)" rx="8" stroke="#a855f7" stroke-width="1.2" stroke-opacity="0.8"/>
+    <rect width="385" height="160" fill="url(#gridPattern)" rx="8"/>
+
+    <!-- Header Title -->
+    <path d="M 0 0 L 180 0 L 200 24 L 0 24 Z" fill="#2d154c" stroke="#c084fc" stroke-width="1"/>
+    <text x="15" y="16" class="font-sans" font-weight="800" font-size="11" fill="#e9d5ff" letter-spacing="1">
+      LEVEL UP PROGRESSION
+    </text>
+
+    <!-- Portal Silhouette Graphic -->
+    <g transform="translate(192, 65)">
+      <!-- Portal Arc -->
+      <ellipse cx="0" cy="-5" rx="35" ry="42" fill="#3b1566" opacity="0.6" filter="url(#glowPurpleStrong)"/>
+      <ellipse cx="0" cy="-5" rx="28" ry="36" fill="none" stroke="#d946ef" stroke-width="2" filter="url(#glowPurple)"/>
+      <!-- Hunter Silhouette -->
+      <path d="M -8 15 L -12 -15 L 0 -25 L 12 -15 L 8 15 Z" fill="#090314" stroke="#c084fc" stroke-width="1"/>
+      <ellipse cx="0" cy="-25" rx="5" ry="5" fill="#ffffff" filter="url(#glowPurple)"/>
+      <!-- Level Arrow Icon -->
+      <g transform="translate(50, -15)">
+        <polygon points="0,15 15,15 15,25 25,25 25,15 40,15 20,-10" fill="#d946ef" filter="url(#glowPurple)"/>
+        <text x="45" y="15" class="font-sans" font-weight="900" font-size="14" fill="#ffffff">LEVEL <tspan fill="#d946ef" font-size="20">99</tspan></text>
+      </g>
+    </g>
+
+    <!-- EXP Progress Bar -->
+    <g transform="translate(25, 115)">
+      <rect x="0" y="0" width="335" height="18" rx="9" fill="#170829" stroke="#7e22ce" stroke-width="1.2"/>
+      <rect x="0" y="0" width="310" height="18" rx="9" fill="url(#xpGrad)" filter="url(#glowPurple)"/>
+      <text x="167" y="13" class="font-mono" font-weight="900" font-size="11" fill="#ffffff" text-anchor="middle">
+        18,500 / 20,000 XP (92.5%)
+      </text>
+    </g>
+  </g>
+
+  <!-- 5. GOAL TRACKING / CV RADAR CHART (Middle Right Center, x: 435, y: 550, w: 385, h: 185) -->
+  <g transform="translate(435, 550)">
+    <!-- Card Frame -->
+    <rect width="385" height="185" fill="url(#cardBg)" rx="8" stroke="#a855f7" stroke-width="1.2" stroke-opacity="0.8"/>
+    <rect width="385" height="185" fill="url(#gridPattern)" rx="8"/>
+
+    <!-- Header Title -->
+    <path d="M 0 0 L 160 0 L 180 24 L 0 24 Z" fill="#2d154c" stroke="#c084fc" stroke-width="1"/>
+    <text x="15" y="16" class="font-sans" font-weight="800" font-size="11" fill="#e9d5ff" letter-spacing="1">
+      GOAL &amp; SKILL RADAR
+    </text>
+
+    <!-- Radar Chart Graphic -->
+    <g transform="translate(192, 105)">
+      <!-- Outer Diamond Grid -->
+      <polygon points="0,-60 75,0 0,60 -75,0" fill="none" stroke="#7e22ce" stroke-width="1" stroke-dasharray="4,4"/>
+      <polygon points="0,-40 50,0 0,40 -50,0" fill="none" stroke="#7e22ce" stroke-width="0.8" stroke-dasharray="3,3"/>
+      <polygon points="0,-20 25,0 0,20 -25,0" fill="none" stroke="#7e22ce" stroke-width="0.6"/>
+      <!-- Axes -->
+      <line x1="0" y1="-65" x2="0" y2="65" stroke="#7e22ce" stroke-width="1"/>
+      <line x1="-80" y1="0" x2="80" y2="0" stroke="#7e22ce" stroke-width="1"/>
+
+      <!-- Filled Skill Area -->
+      <polygon points="0,-54 68,0 0,52 -70,0" fill="url(#radarFill)" stroke="#d946ef" stroke-width="2" filter="url(#glowPurple)"/>
+
+      <!-- Glowing Nodes -->
+      <circle cx="0" cy="-54" r="4" fill="#ffffff" filter="url(#glowPurple)"/>
+      <circle cx="68" cy="0" r="4" fill="#ffffff" filter="url(#glowPurple)"/>
+      <circle cx="0" cy="52" r="4" fill="#ffffff" filter="url(#glowPurple)"/>
+      <circle cx="-70" cy="0" r="4" fill="#ffffff" filter="url(#glowPurple)"/>
+
+      <!-- Axis Labels -->
+      <text x="0" y="-68" class="font-sans" font-weight="800" font-size="11" fill="#e9d5ff" text-anchor="middle">Deep Learning (95%)</text>
+      <text x="88" y="4" class="font-sans" font-weight="800" font-size="11" fill="#e9d5ff" text-anchor="start">RAG System (90%)</text>
+      <text x="0" y="76" class="font-sans" font-weight="800" font-size="11" fill="#e9d5ff" text-anchor="middle">LLMs &amp; Prompt (88%)</text>
+      <text x="-88" y="4" class="font-sans" font-weight="800" font-size="11" fill="#e9d5ff" text-anchor="end">FER &amp; Vision (92%)</text>
+    </g>
+  </g>
+
+  <!-- ================= THIRD ROW ================= -->
+
+  <!-- 6. ACHIEVEMENT TROPHY SHOWCASE (Full Width Box, x: 30, y: 750, w: 790, h: 220) -->
+  <g transform="translate(30, 750)">
+    <!-- Card Frame -->
+    <rect width="790" height="220" fill="url(#cardBg)" rx="8" stroke="#c084fc" stroke-width="1.5" stroke-opacity="0.9"/>
+    <rect width="790" height="220" fill="url(#gridPattern)" rx="8"/>
+
+    <!-- Header Title -->
+    <path d="M 0 0 L 260 0 L 285 28 L 0 28 Z" fill="#2d154c" stroke="#c084fc" stroke-width="1"/>
+    <text x="20" y="19" class="font-sans" font-weight="900" font-size="13" fill="#ffffff" letter-spacing="2">
+      ACHIEVEMENT TROPHY SHOWCASE
+    </text>
+
+    <!-- Trophies Grid (4 Badges) -->
+    <g transform="translate(25, 48)">
+
+      <!-- Trophy 1: FER Master -->
+      <g transform="translate(0, 0)">
+        <rect width="175" height="150" fill="#180a33" rx="8" stroke="#a855f7" stroke-width="1.2"/>
+        <rect width="175" height="150" fill="url(#gridPattern)" rx="8"/>
+        <!-- Crystal Icon -->
+        <g transform="translate(87, 45)">
+          <polygon points="0,-25 18,-8 12,22 -12,22 -18,-8" fill="#d946ef" stroke="#ffffff" stroke-width="1.5" filter="url(#glowPurple)"/>
+          <polygon points="0,-25 8,-5 0,20 -8,-5" fill="#f43f5e" opacity="0.8"/>
+        </g>
+        <text x="87" y="92" class="font-sans" font-weight="900" font-size="13" fill="#ffffff" text-anchor="middle">FER Researcher</text>
+        <rect x="15" y="102" width="145" height="34" rx="4" fill="#240d47"/>
+        <text x="87" y="116" class="font-sans" font-size="10" fill="#e9d5ff" text-anchor="middle">1+ Yrs Facial Emotion</text>
+        <text x="87" y="129" class="font-sans" font-weight="bold" font-size="10" fill="#c084fc" text-anchor="middle">Recognition (PyTorch/ViT)</text>
+      </g>
+
+      <!-- Trophy 2: RAG Master -->
+      <g transform="translate(195, 0)">
+        <rect width="175" height="150" fill="#180a33" rx="8" stroke="#a855f7" stroke-width="1.2"/>
+        <rect width="175" height="150" fill="url(#gridPattern)" rx="8"/>
+        <!-- Book / Crystal Icon -->
+        <g transform="translate(87, 45)">
+          <polygon points="-20,-15 0,-25 20,-15 20,15 0,25 -20,15" fill="#8b5cf6" stroke="#ffffff" stroke-width="1.5" filter="url(#glowPurple)"/>
+          <line x1="0" y1="-25" x2="0" y2="25" stroke="#ffffff" stroke-width="1.5"/>
+        </g>
+        <text x="87" y="92" class="font-sans" font-weight="900" font-size="13" fill="#ffffff" text-anchor="middle">RAG Architect</text>
+        <rect x="15" y="102" width="145" height="34" rx="4" fill="#240d47"/>
+        <text x="87" y="116" class="font-sans" font-size="10" fill="#e9d5ff" text-anchor="middle">FAISS + BM25 Hybrid Search</text>
+        <text x="87" y="129" class="font-sans" font-weight="bold" font-size="10" fill="#c084fc" text-anchor="middle">&amp; Reranking Pipeline</text>
+      </g>
+
+      <!-- Trophy 3: Degree Cleared -->
+      <g transform="translate(390, 0)">
+        <rect width="175" height="150" fill="#180a33" rx="8" stroke="#a855f7" stroke-width="1.2"/>
+        <rect width="175" height="150" fill="url(#gridPattern)" rx="8"/>
+        <!-- Emblem Icon -->
+        <g transform="translate(87, 45)">
+          <circle cx="0" cy="0" r="22" fill="#7e22ce" stroke="#ffffff" stroke-width="1.5" filter="url(#glowPurple)"/>
+          <polygon points="0,-12 12,0 0,12 -12,0" fill="#e879f9"/>
+        </g>
+        <text x="87" y="92" class="font-sans" font-weight="900" font-size="13" fill="#ffffff" text-anchor="middle">Degree Cleared</text>
+        <rect x="15" y="102" width="145" height="34" rx="4" fill="#240d47"/>
+        <text x="87" y="116" class="font-sans" font-size="10" fill="#e9d5ff" text-anchor="middle">B.Sc Information Tech</text>
+        <text x="87" y="129" class="font-sans" font-weight="bold" font-size="10" fill="#c084fc" text-anchor="middle">Greenwich Uni (2021-2025)</text>
+      </g>
+
+      <!-- Trophy 4: Language Master -->
+      <g transform="translate(585, 0)">
+        <rect width="175" height="150" fill="#180a33" rx="8" stroke="#a855f7" stroke-width="1.2"/>
+        <rect width="175" height="150" fill="url(#gridPattern)" rx="8"/>
+        <!-- Star Crest Icon -->
+        <g transform="translate(87, 45)">
+          <polygon points="0,-22 6,-6 22,0 6,6 0,22 -6,6 -22,0 -6,-6" fill="#ec4899" stroke="#ffffff" stroke-width="1.5" filter="url(#glowPurple)"/>
+        </g>
+        <text x="87" y="92" class="font-sans" font-weight="900" font-size="13" fill="#ffffff" text-anchor="middle">Language Master</text>
+        <rect x="15" y="102" width="145" height="34" rx="4" fill="#240d47"/>
+        <text x="87" y="116" class="font-sans" font-size="10" fill="#e9d5ff" text-anchor="middle">VSTEP B2 Certified</text>
+        <text x="87" y="129" class="font-sans" font-weight="bold" font-size="10" fill="#c084fc" text-anchor="middle">English Proficiency (2024)</text>
+      </g>
+
+    </g>
+  </g>
+
+  <!-- ================= BOTTOM ROW ================= -->
+
+  <!-- 7. ACTIVITY LOG / MATRIX & GOAL PROGRESS (Bottom Left, x: 30, y: 990, w: 450, h: 250) -->
+  <g transform="translate(30, 990)">
+    <!-- Card Frame -->
+    <rect width="450" height="250" fill="url(#cardBg)" rx="8" stroke="#a855f7" stroke-width="1.2" stroke-opacity="0.8"/>
+    <rect width="450" height="250" fill="url(#gridPattern)" rx="8"/>
+
+    <!-- Header Title -->
+    <path d="M 0 0 L 210 0 L 230 24 L 0 24 Z" fill="#2d154c" stroke="#c084fc" stroke-width="1"/>
+    <text x="15" y="16" class="font-sans" font-weight="800" font-size="11" fill="#e9d5ff" letter-spacing="1">
+      QUEST LOG &amp; CONTRIBUTION MATRIX
+    </text>
+
+    <!-- Contribution Grid (Weeks W-09 to W-13) -->
+    <g transform="translate(25, 45)">
+      <!-- Week Headers -->
+      <text x="20" y="12" class="font-mono" font-size="11" fill="#c084fc">W-09</text>
+      <text x="100" y="12" class="font-mono" font-size="11" fill="#c084fc">W-10</text>
+      <text x="180" y="12" class="font-mono" font-size="11" fill="#c084fc">W-11</text>
+      <text x="260" y="12" class="font-mono" font-size="11" fill="#c084fc">W-12</text>
+      <text x="340" y="12" class="font-mono" font-size="11" fill="#c084fc">W-13</text>
+
+      <!-- Row 1 boxes -->
+      <g transform="translate(0, 22)">
+        <rect x="0" y="0" width="60" height="26" rx="4" fill="#a855f7" filter="url(#glowPurple)"/>
+        <text x="30" y="17" class="font-sans" font-weight="bold" font-size="12" fill="#ffffff" text-anchor="middle">✓</text>
+
+        <rect x="80" y="0" width="60" height="26" rx="4" fill="#a855f7" filter="url(#glowPurple)"/>
+        <text x="110" y="17" class="font-sans" font-weight="bold" font-size="12" fill="#ffffff" text-anchor="middle">✓</text>
+
+        <rect x="160" y="0" width="60" height="26" rx="4" fill="#d946ef" filter="url(#glowPurple)"/>
+        <text x="190" y="17" class="font-sans" font-weight="bold" font-size="12" fill="#ffffff" text-anchor="middle">✓</text>
+
+        <rect x="240" y="0" width="60" height="26" rx="4" fill="#a855f7" filter="url(#glowPurple)"/>
+        <text x="270" y="17" class="font-sans" font-weight="bold" font-size="12" fill="#ffffff" text-anchor="middle">✓</text>
+
+        <rect x="320" y="0" width="60" height="26" rx="4" fill="#a855f7" filter="url(#glowPurple)"/>
+        <text x="350" y="17" class="font-sans" font-weight="bold" font-size="12" fill="#ffffff" text-anchor="middle">✓</text>
+      </g>
+
+      <!-- Row 2 boxes -->
+      <g transform="translate(0, 56)">
+        <rect x="0" y="0" width="60" height="26" rx="4" fill="#a855f7" filter="url(#glowPurple)"/>
+        <text x="30" y="17" class="font-sans" font-weight="bold" font-size="12" fill="#ffffff" text-anchor="middle">✓</text>
+
+        <rect x="80" y="0" width="60" height="26" rx="4" fill="#a855f7" filter="url(#glowPurple)"/>
+        <text x="110" y="17" class="font-sans" font-weight="bold" font-size="12" fill="#ffffff" text-anchor="middle">✓</text>
+
+        <rect x="160" y="0" width="60" height="26" rx="4" fill="#d946ef" filter="url(#glowPurple)"/>
+        <text x="190" y="17" class="font-sans" font-weight="bold" font-size="12" fill="#ffffff" text-anchor="middle">✓</text>
+
+        <rect x="240" y="0" width="60" height="26" rx="4" fill="#2d134d" stroke="#a855f7" stroke-width="1"/>
+        <text x="270" y="17" class="font-sans" font-weight="bold" font-size="11" fill="#e9d5ff" text-anchor="middle">10</text>
+
+        <rect x="320" y="0" width="60" height="26" rx="4" fill="#2d134d" stroke="#a855f7" stroke-width="1"/>
+        <text x="350" y="17" class="font-sans" font-weight="bold" font-size="11" fill="#e9d5ff" text-anchor="middle">11</text>
+      </g>
+    </g>
+
+    <!-- Goal Progress Bar -->
+    <g transform="translate(25, 160)">
+      <text x="0" y="0" class="font-sans" font-weight="800" font-size="12" fill="#e9d5ff">
+        CAREER GOAL PROGRESS
+      </text>
+      <rect x="0" y="12" width="380" height="18" rx="9" fill="#170829" stroke="#7e22ce" stroke-width="1.2"/>
+      <rect x="0" y="12" width="360" height="18" rx="9" fill="url(#hpGrad)" filter="url(#glowPurple)"/>
+      <text x="190" y="25" class="font-mono" font-weight="900" font-size="11" fill="#ffffff" text-anchor="middle">
+        95% COMPLETE (READY FOR PRODUCTION)
+      </text>
+    </g>
+  </g>
+
+  <!-- 8. TECH STACK RUNES & CONTACT ARTIFACTS (Bottom Right, x: 495, y: 990, w: 325, h: 250) -->
+  <g transform="translate(495, 990)">
+    <!-- Card Frame -->
+    <rect width="325" height="250" fill="url(#cardBg)" rx="8" stroke="#a855f7" stroke-width="1.2" stroke-opacity="0.8"/>
+    <rect width="325" height="250" fill="url(#gridPattern)" rx="8"/>
+
+    <!-- Header Title -->
+    <path d="M 0 0 L 190 0 L 210 24 L 0 24 Z" fill="#2d154c" stroke="#c084fc" stroke-width="1"/>
+    <text x="15" y="16" class="font-sans" font-weight="800" font-size="11" fill="#e9d5ff" letter-spacing="1">
+      TECH RUNES &amp; ARTIFACTS
+    </text>
+
+    <!-- Rune & Tech Stack Badges -->
+    <g transform="translate(20, 45)">
+      <!-- Row 1: PyTorch, Python, FAISS -->
+      <g transform="translate(0, 0)">
+        <rect width="85" height="28" rx="6" fill="#240c42" stroke="#d946ef" stroke-width="1"/>
+        <text x="42" y="18" class="font-sans" font-weight="bold" font-size="11" fill="#ffffff" text-anchor="middle">🔥 PyTorch</text>
+
+        <rect x="95" width="85" height="28" rx="6" fill="#240c42" stroke="#c084fc" stroke-width="1"/>
+        <text x="137" y="18" class="font-sans" font-weight="bold" font-size="11" fill="#ffffff" text-anchor="middle">🐍 Python</text>
+
+        <rect x="190" width="95" height="28" rx="6" fill="#240c42" stroke="#8b5cf6" stroke-width="1"/>
+        <text x="237" y="18" class="font-sans" font-weight="bold" font-size="11" fill="#ffffff" text-anchor="middle">⚡ FAISS</text>
+      </g>
+
+      <!-- Row 2: ViT, BM25, C# -->
+      <g transform="translate(0, 38)">
+        <rect width="85" height="28" rx="6" fill="#240c42" stroke="#8b5cf6" stroke-width="1"/>
+        <text x="42" y="18" class="font-sans" font-weight="bold" font-size="11" fill="#ffffff" text-anchor="middle">👁️ ViT</text>
+
+        <rect x="95" width="85" height="28" rx="6" fill="#240c42" stroke="#d946ef" stroke-width="1"/>
+        <text x="137" y="18" class="font-sans" font-weight="bold" font-size="11" fill="#ffffff" text-anchor="middle">🔍 BM25</text>
+
+        <rect x="190" width="95" height="28" rx="6" fill="#240c42" stroke="#c084fc" stroke-width="1"/>
+        <text x="237" y="18" class="font-sans" font-weight="bold" font-size="11" fill="#ffffff" text-anchor="middle">⚙️ C# .NET</text>
+      </g>
+
+      <!-- Contact Info Section inside Tech Runes -->
+      <g transform="translate(0, 85)">
+        <line x1="0" y1="0" x2="285" y2="0" stroke="#7e22ce" stroke-width="1" stroke-dasharray="4,4"/>
+        <text x="0" y="20" class="font-mono" font-weight="bold" font-size="11" fill="#c084fc">&gt; CONTACT DOSSIER:</text>
+        <text x="0" y="42" class="font-sans" font-size="12" fill="#e9d5ff">📧 bachien0987@gmail.com</text>
+        <text x="0" y="62" class="font-sans" font-size="12" fill="#e9d5ff">📞 0365667716</text>
+        <text x="0" y="82" class="font-sans" font-size="12" fill="#e9d5ff">🌐 github.com/MartinLB-C</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= FOOTER ================= -->
+  <g transform="translate(425, 1270)">
+    <!-- Decorative Line -->
+    <line x1="-380" y1="0" x2="380" y2="0" stroke="url(#purpleGlowGrad)" stroke-width="1.5" opacity="0.8"/>
+    <!-- Center Emblem -->
+    <polygon points="0,-8 10,0 0,8 -10,0" fill="#d946ef" filter="url(#glowPurple)"/>
+    <text x="0" y="28" class="font-mono" font-weight="bold" font-size="11" fill="#c084fc" text-anchor="middle" letter-spacing="2">
+      SYSTEM STATUS: ONLINE // LEVEL 99 MONARCH CV ACTIVE
+    </text>
+  </g>
+
+</svg>

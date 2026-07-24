@@ -1,27 +1,66 @@
 <p align="center">
-  <!-- Futuristic Cyber Header Banner (100% Local Self-Contained Vector SVG) -->
+  <!-- CYBER PIXEL ANIME PROFILE BANNER FOR MARTIN -->
   <a href="https://github.com/MartinLB-C">
-    <img src="./assets/cyber_header.svg" alt="Lê Bá Chiến AI Cyber Header Banner" width="100%" />
+    <img src="./assets/cyber_anime_profile.svg" alt="Martin (Lê Bá Chiến) — AI Engineer Cyber Profile" width="100%" />
   </a>
 </p>
 
 <br/>
 
-<!-- Futuristic Profile Dossier Card (Giới thiệu bản thân & Mục tiêu) -->
-<p align="center">
-  <img src="./assets/profile_card.svg" alt="Lê Bá Chiến Profile Dossier Card" width="100%" />
-</p>
+<!-- ================= CANDIDATE DOSSIER & METRICS ================= -->
+<div align="center">
+
+| 🎧 **HUNTER / CANDIDATE DOSSIER** | 💻 **TECHNICAL SPECIFICATIONS** |
+| :--- | :--- |
+| **English Name / Alias** | **Martin** (`MartinLB-C`) |
+| **Full Name** | **Lê Bá Chiến** |
+| **Role / Specialization** | **AI Engineer // Deep Learning & RAG Specialist** |
+| **Education** | **B.Sc Information Technology** — Greenwich University Vietnam (2021–2025) |
+| **Certificate** | **VSTEP B2 English Certified** (2024) |
+| **Core Expertise** | Computer Vision (FER), PyTorch, ViT, RAG Architecture, FAISS + BM25 |
+| **Contact Email** | `bachien0987@gmail.com` |
+| **Comms Line / Phone** | `0365667716` |
+| **System Status** | `ONLINE // READY FOR AI ROLES` |
+
+</div>
 
 <br/>
 
-<!-- Technical Skills Matrix Card (Kỹ năng chuyên môn) -->
-<p align="center">
-  <img src="./assets/skills_card.svg" alt="Lê Bá Chiến Technical Skills Card" width="100%" />
-</p>
+---
 
-<br/>
+### 🎧 CORE RESEARCH & SYSTEM ARCHITECTURE
 
-<!-- Soft Skills & Methodologies Card (Kỹ năng mềm) -->
+#### 👁️ 1. COMPUTER VISION & DEEP LEARNING (FER SPECIALIST)
+- **Facial Emotion Recognition (FER)**: 1+ year dedicated research optimizing FER models with PyTorch.
+- **Architectures**: Deep Convolutional Neural Networks (`ResNet`, `EfficientNet`, `MobileNet`) & Vision Transformers (`ViT Tiny`).
+- **Data Augmentation**: Advanced augmentation pipelines (`AugMix`, `RandAugment`, `TrivialAugment`) for out-of-distribution robustness.
+- **3D Spatial Vision**: 3D Point Cloud & LiDAR dataset annotation and spatial preprocessing.
+
+#### 🧠 2. RAG ARCHITECTURE & ADVANCED LLM INTEGRATION
+- **Hybrid Search Engine**: Combined `FAISS` Vector Search + `BM25` Keyword Search for maximal document retrieval recall.
+- **Cross-Encoder Reranking**: Integrated neural reranking to boost top-k retrieval precision.
+- **Prompt & Query Optimization**: Developed prompt engineering, query expansion, and context rewriting workflows.
+- **LLM Integration**: Hands-on deployment with `Gemini` API & local LLMs (`Ollama`) with automated `Faithfulness` evaluation.
+
+#### ⚙️ 3. SOFTWARE ENGINEERING & INFRASTRUCTURE
+- **Languages**: `Python 3.x` (Primary), `C# (.NET Core)`, `SQL Server`.
+- **Toolkits & Frameworks**: `PyTorch`, `Scikit-Learn`, `Timm`, `Torchmetrics`, `Git`, `Docker`.
+
+---
+
+### 🏆 KEY HIGHLIGHTS & ACCOMPLISHMENTS
+
+```
++------------------------------------------------------------------------------------------------+
+| [🔬 FER RESEARCHER]    | 1+ Years Intensive Research on Facial Emotion Recognition (PyTorch/ViT) |
+| [⚡ RAG ARCHITECT]     | Engineered FAISS + BM25 Hybrid Search & Reranking Architecture          |
+| [🎓 DEGREE CLEARED]    | B.Sc Information Technology — Greenwich University Vietnam (2021–2025)  |
+| [📜 LANGUAGE MASTER]   | Certified VSTEP B2 English Proficiency (2024)                          |
++------------------------------------------------------------------------------------------------+
+```
+
+---
+
 <p align="center">
-  <img src="./assets/soft_skills_card.svg" alt="Lê Bá Chiến Soft Skills Card" width="100%" />
+  <sub>🎧 <i>Martin (Lê Bá Chiến) — AI Engineer Cyber Profile Dossier // All Systems Operational</i> 🎧</sub>
 </p>
