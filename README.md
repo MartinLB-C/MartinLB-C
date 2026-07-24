@@ -24,6 +24,13 @@
 
 <br/>
 
+<!-- Futuristic Cyber AI Grid Display Panel Avatar -->
+<p align="center">
+  <img src="./assets/cyber_avatar.jpg" alt="Lê Bá Chiến Futuristic AI Cyber Grid Avatar" width="400" />
+</p>
+
+<br/>
+
 <!-- Futuristic Vector Profile Dossier Card -->
 <p align="center">
   <img src="./assets/profile_card.svg" alt="Lê Bá Chiến Profile Dossier Card" width="100%" />
