@@ -165,7 +165,7 @@
   <!-- Main Animated Content Group -->
   <g class="main-container">
     
-    <!-- Central HUD Concentric Rings (Rotating Neural Core) -->
+    <!-- Central HUD Concentric Rings (Rotating) -->
     <g class="hud-rotate-cw" opacity="0.35">
       <circle cx="500" cy="170" r="120" stroke="#00f3ff" stroke-width="1.5" stroke-dasharray="40, 15, 10, 15" fill="none"/>
       <circle cx="500" cy="170" r="140" stroke="#00f3ff" stroke-width="1" stroke-dasharray="100, 20, 5, 20" fill="none"/>
@@ -211,17 +211,17 @@
     <g class="tech-font" text-anchor="middle">
       <!-- Top Tag -->
       <text x="500" y="55" fill="#00f3ff" font-size="12" letter-spacing="4" opacity="0.8">
-        [ NEURAL MATRIX v5.0 // AI CORE ONLINE ]
+        [ SYSTEM DOSSIER // AI ENGINEER &amp; RAG SPECIALIST ]
       </text>
 
       <!-- Main Glowing Title -->
       <text x="500" y="115" fill="#ffffff" font-size="34" font-weight="900" letter-spacing="6" filter="url(#glowCyan)">
-        MARTINLB-C
+        LÊ BÁ CHIẾN
       </text>
       
       <!-- Subtitle -->
       <text x="500" y="145" fill="#00f3ff" font-size="14" letter-spacing="3" opacity="0.9">
-        ARTIFICIAL INTELLIGENCE &amp; DEEP LEARNING ARCHITECT
+        AI ENGINEER // DEEP LEARNING &amp; RAG ARCHITECT
       </text>
 
       <!-- Hologram Line Divider -->
@@ -231,23 +231,23 @@
       <g class="blinking-status">
         <rect x="340" y="242" width="320" height="26" fill="#00f3ff" fill-opacity="0.1" stroke="#00f3ff" stroke-width="1" rx="4"/>
         <text x="500" y="260" fill="#00f3ff" font-size="12" letter-spacing="2">
-          &gt; NEURAL MODEL LOADED // READY &lt;
+          &gt; SYSTEM LOADED // OPEN FOR AI ROLES &lt;
         </text>
       </g>
     </g>
 
     <!-- Bottom Left System Metrics -->
     <g class="tech-font" font-size="10" fill="#00f3ff" opacity="0.65">
-      <text x="40" y="275">&gt; MODEL: LLMs, RAG &amp; VISION</text>
-      <text x="40" y="292">&gt; HARDWARE: CUDA / TENSOR CORE</text>
-      <text x="40" y="309">&gt; INF_LATENCY: 0.4ms REASONING</text>
+      <text x="40" y="275">&gt; EDU: GREENWICH VIETNAM</text>
+      <text x="40" y="292">&gt; FOCUS: DEEP LEARNING &amp; RAG</text>
+      <text x="40" y="309">&gt; LANG: ENGLISH VSTEP B2</text>
     </g>
 
     <!-- Bottom Right Cyber Coordinates -->
     <g class="tech-font" font-size="10" fill="#ff0055" opacity="0.65" text-anchor="end">
-      <text x="960" y="275">SPECIALIZATION: GEN-AI &lt;</text>
-      <text x="960" y="292">MLOPS PIPELINE: DEPLOYED &lt;</text>
-      <text x="960" y="309">NEURAL NODE: ONLINE &lt;</text>
+      <text x="960" y="275">SPECIALIZATION: FER &amp; LLM &lt;</text>
+      <text x="960" y="292">GOAL: M.S. IN AI (2 YEARS) &lt;</text>
+      <text x="960" y="309">STATUS: ACTIVE ENGINEER &lt;</text>
     </g>
 
   </g>
